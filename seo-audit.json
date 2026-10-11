@@ -1,0 +1,28 @@
+{
+  "checked_at": "2026-10-11",
+  "method": "Read rendered page DOM in browser; no access to Salla admin or Search Console",
+  "scope": ["https://bymahee.com/ar", "https://bymahee.com/ar/green-palm-tote-with-pouch/p1130514877"],
+  "home": {
+    "title_language": "Arabic",
+    "meta_description_language": "Arabic",
+    "html_lang": "ar",
+    "canonical": "https://bymahee.com/ar",
+    "hreflang": ["ar", "en", "x-default"],
+    "product_names_on_home": "English names within Arabic interface",
+    "footer_brand_description_language": "English"
+  },
+  "sample_product": {
+    "title_language": "English",
+    "visible_product_heading_language": "English",
+    "description_languages": ["Arabic", "English"],
+    "meta_description": "Arabic with two opening words joined without a space",
+    "product_image_alt_language": "English",
+    "html_lang": "ar",
+    "canonical_matches_arabic_page": true,
+    "hreflang": ["ar", "en", "x-default"],
+    "product_json_ld_present": true,
+    "product_json_ld_location": "@graph",
+    "offer": {"price": 355, "currency": "SAR", "availability": "https://schema.org/InStock"}
+  },
+  "not_checked": ["Salla admin fields", "all English pages", "hreflang reciprocal validity", "robots.txt", "sitemap", "structured data full validation", "Search Console", "actual indexing", "keyword search volume", "rankings", "page speed"]
+}
