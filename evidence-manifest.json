@@ -1,0 +1,242 @@
+[
+  {
+    "file": "assets/17-hero-mobile-clean.jpg",
+    "title": "الرئيسية قبل التمرير",
+    "viewport": "390×844",
+    "pixels": [
+      387,
+      838
+    ],
+    "source": "https://bymahee.com/ar",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/01-home-mobile.jpg",
+    "title": "الرئيسية مع إشعار شراء",
+    "viewport": "390×844",
+    "pixels": [
+      387,
+      838
+    ],
+    "source": "https://bymahee.com/ar",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/02-home-below-fold.jpg",
+    "title": "بعد التمرير: بطاقات وبانر",
+    "viewport": "390×844",
+    "pixels": [
+      387,
+      838
+    ],
+    "source": "https://bymahee.com/ar",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/03-menu-mobile.jpg",
+    "title": "القائمة الرئيسية",
+    "viewport": "390×844",
+    "pixels": [
+      390,
+      844
+    ],
+    "source": "https://bymahee.com/ar",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/04-menu-bags.jpg",
+    "title": "المستوى الثاني: الشنط",
+    "viewport": "390×844",
+    "pixels": [
+      390,
+      844
+    ],
+    "source": "https://bymahee.com/ar",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/05-category-mobile.jpg",
+    "title": "قائمة الشنط",
+    "viewport": "390×844",
+    "pixels": [
+      387,
+      838
+    ],
+    "source": "https://bymahee.com/ar/%D8%B4%D9%86%D8%B7/c541461361",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/16-search-arabic.jpg",
+    "title": "بحث عربي: شنط",
+    "viewport": "390×844",
+    "pixels": [
+      387,
+      838
+    ],
+    "source": "https://bymahee.com/ar",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/06-product-mobile.jpg",
+    "title": "المنتج فوق الطيّة",
+    "viewport": "390×844",
+    "pixels": [
+      387,
+      838
+    ],
+    "source": "https://bymahee.com/ar/green-palm-tote-with-pouch/p1130514877",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/07-product-details.jpg",
+    "title": "تفاصيل المنتج مطوية",
+    "viewport": "390×844",
+    "pixels": [
+      387,
+      838
+    ],
+    "source": "https://bymahee.com/ar/green-palm-tote-with-pouch/p1130514877",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/08-product-description.jpg",
+    "title": "تفاصيل المنتج مفتوحة",
+    "viewport": "390×844",
+    "pixels": [
+      387,
+      838
+    ],
+    "source": "https://bymahee.com/ar/green-palm-tote-with-pouch/p1130514877",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/09-add-to-cart.jpg",
+    "title": "بعد إضافة قطعة واحدة",
+    "viewport": "390×844",
+    "pixels": [
+      387,
+      838
+    ],
+    "source": "https://bymahee.com/ar/green-palm-tote-with-pouch/p1130514877",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/10-cart-drawer.jpg",
+    "title": "السلة المصغرة",
+    "viewport": "390×844",
+    "pixels": [
+      390,
+      844
+    ],
+    "source": "https://bymahee.com/ar/green-palm-tote-with-pouch/p1130514877",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/11-cart-mobile.jpg",
+    "title": "صفحة السلة",
+    "viewport": "390×844",
+    "pixels": [
+      387,
+      838
+    ],
+    "source": "https://bymahee.com/ar/cart",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/12-cart-summary.jpg",
+    "title": "الملخص مع إشعار عائم",
+    "viewport": "390×844",
+    "pixels": [
+      387,
+      838
+    ],
+    "source": "https://bymahee.com/ar/cart",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/13-checkout-login.jpg",
+    "title": "Checkout: تسجيل أو ضيفة",
+    "viewport": "390×844",
+    "pixels": [
+      390,
+      844
+    ],
+    "source": "https://bymahee.com/ar/cart",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/14-guest-checkout.jpg",
+    "title": "نموذج الضيفة دون إدخال بيانات",
+    "viewport": "390×844",
+    "pixels": [
+      386,
+      835
+    ],
+    "source": "https://bymahee.com/ar/cart",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/15-return-policy.jpg",
+    "title": "سياسة الإرجاع",
+    "viewport": "1274×717",
+    "pixels": [
+      1274,
+      717
+    ],
+    "source": "https://bymahee.com/ar/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%A8%D8%AF%D8%A7%D9%84-%D9%88%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%B1%D8%AC%D8%A7%D8%B9/page-1145003807",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/18-home-desktop.jpg",
+    "title": "الرئيسية على الديسكتوب",
+    "viewport": "1440×900",
+    "pixels": [
+      1434,
+      896
+    ],
+    "source": "https://bymahee.com/ar",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/19-product-desktop.jpg",
+    "title": "المنتج على الديسكتوب",
+    "viewport": "1440×900",
+    "pixels": [
+      1434,
+      896
+    ],
+    "source": "https://bymahee.com/ar/green-palm-tote-with-pouch/p1130514877",
+    "date": "2026-10-11",
+    "accepted": true
+  },
+  {
+    "file": "assets/20-product-375.jpg",
+    "title": "المنتج على موبايل أصغر",
+    "viewport": "375×812",
+    "pixels": [
+      372,
+      806
+    ],
+    "source": "https://bymahee.com/ar/green-palm-tote-with-pouch/p1130514877",
+    "date": "2026-10-11",
+    "accepted": true
+  }
+]

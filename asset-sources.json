@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-11",
+  "assets": [
+    {
+      "url": "https://cdn.files.salla.network/theme/1178657594/071b0e84-0cb6-485d-a98a-fee1532af236.webp",
+      "kind": "image"
+    },
+    {
+      "url": "https://cdn.files.salla.network/products/1178657594/d92a4911-1a80-445c-aae3-0fa34465d076-original.webp",
+      "kind": "image"
+    },
+    {
+      "url": "https://bymahee.com/cf-fonts/v/cairo/5.2.7/latin/wght/normal.woff2",
+      "kind": "font"
+    },
+    {
+      "url": "https://bymahee.com/cf-fonts/v/cairo/5.2.7/arabic/wght/normal.woff2",
+      "kind": "font"
+    }
+  ],
+  "screenshots": "Captured and inspected in Codex in-app browser during this audit."
+}
