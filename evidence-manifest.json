@@ -85,7 +85,7 @@
   },
   {
     "file": "assets/06-product-mobile.jpg",
-    "title": "المنتج فوق الطيّة",
+    "title": "صفحة المنتج قبل نزول الصفحة",
     "viewport": "390×844",
     "pixels": [
       387,
@@ -97,7 +97,7 @@
   },
   {
     "file": "assets/07-product-details.jpg",
-    "title": "تفاصيل المنتج مطوية",
+    "title": "وصف المنتج قبل الضغط على «اقرأ المزيد»",
     "viewport": "390×844",
     "pixels": [
       387,
@@ -109,7 +109,7 @@
   },
   {
     "file": "assets/08-product-description.jpg",
-    "title": "تفاصيل المنتج مفتوحة",
+    "title": "وصف المنتج بعد الضغط على «اقرأ المزيد»",
     "viewport": "390×844",
     "pixels": [
       387,
@@ -157,7 +157,7 @@
   },
   {
     "file": "assets/12-cart-summary.jpg",
-    "title": "الملخص مع إشعار عائم",
+    "title": "ملخص الطلب مع رسالة تغطي جزءًا منه",
     "viewport": "390×844",
     "pixels": [
       387,
@@ -169,7 +169,7 @@
   },
   {
     "file": "assets/13-checkout-login.jpg",
-    "title": "Checkout: تسجيل أو ضيفة",
+    "title": "إتمام الطلب: تسجيل الدخول أو الشراء دون حساب",
     "viewport": "390×844",
     "pixels": [
       390,
@@ -181,7 +181,7 @@
   },
   {
     "file": "assets/14-guest-checkout.jpg",
-    "title": "نموذج الضيفة دون إدخال بيانات",
+    "title": "نموذج الشراء دون حساب، دون إدخال بيانات",
     "viewport": "390×844",
     "pixels": [
       386,
@@ -205,7 +205,7 @@
   },
   {
     "file": "assets/18-home-desktop.jpg",
-    "title": "الرئيسية على الديسكتوب",
+    "title": "الرئيسية على الكمبيوتر",
     "viewport": "1440×900",
     "pixels": [
       1434,
@@ -217,7 +217,7 @@
   },
   {
     "file": "assets/19-product-desktop.jpg",
-    "title": "المنتج على الديسكتوب",
+    "title": "صفحة المنتج على الكمبيوتر",
     "viewport": "1440×900",
     "pixels": [
       1434,
