@@ -1,0 +1,9 @@
+﻿name,users,buyers,purchases,revenue,user_purchase_rate,engagement,time
+Safari,6756,108,112,53647.18,1.598579,43.53,54s
+Chrome,1218,3,3,3037.5,0.246305,34.29,20s
+Android Webview,51,0,0,0.0,0.0,75.0,2m 42s
+Safari (in-app),40,1,1,226.5,2.5,73.81,2m 33s
+Samsung Internet,26,2,2,1259.9,7.692308,50.0,3m 31s
+Edge,10,0,0,0.0,0.0,76.0,1m 36s
+(not set),2,0,0,0.0,0.0,0.0,0s
+Firefox,1,0,0,0.0,0.0,50.0,38s

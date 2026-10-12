@@ -1,0 +1,7 @@
+﻿name,users,buyers,purchases,revenue,user_purchase_rate,engagement,time
+iOS,6824,110,114,55381.18,1.611958,43.54,54s
+Android,1105,3,3,2384.9,0.271493,31.22,19s
+Windows,92,0,0,0.0,0.0,61.4,1m 36s
+Macintosh,82,1,1,405.0,1.219512,49.09,2m 14s
+Linux,9,0,0,0.0,0.0,30.0,11s
+(not set),5,0,0,0.0,0.0,0.0,0s

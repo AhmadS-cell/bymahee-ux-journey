@@ -49,6 +49,19 @@ assert tracking['matched_comparison']['period_to']==data['metadata']['funnel_to'
 assert tracking['matched_comparison']['independent_users']==[next(r for r in data['funnel_period_events'] if r['name']==k)['users'] for k in ['view_item','add_to_cart','begin_checkout','purchase']]
 assert tracking['matched_comparison']['closed_sequential_users']==data['funnel_closed']['steps'][1:]
 assert not tracking['same_session_90_day_funnel_verified'] and not tracking['applied_to_store']
+buyers=json.loads((root/'analytics/buyer-profile.json').read_text(encoding='utf-8'))
+assert buyers==data['buyer_profile']
+assert buyers['period_from']==data['metadata']['period_from'] and buyers['period_to']==data['metadata']['period_to']
+for dimension,rows in buyers['dimensions'].items():
+    assert sum(r['purchases'] for r in rows)==data['totals']['purchases'],dimension
+    assert abs(sum(r['revenue'] for r in rows)-data['totals']['purchase_revenue'])<.02,dimension
+    assert all(abs(r['user_purchase_rate']-100*r['buyers']/r['users'])<.000001 if r['users'] else r['user_purchase_rate'] is None for r in rows),dimension
+    if dimension=='cities':assert all(abs(r['user_purchase_rate']-r['native_user_purchase_rate'])<=.0051 for r in rows if r['users'])
+cityrows=buyers['dimensions']['cities']
+eligible=[r for r in cityrows if r['name']!='(not set)' and r['users']>=buyers['thresholds']['min_traffic'] and r['buyers']>=buyers['thresholds']['min_purchases_for_positive_ranking']]
+assert max(eligible,key=lambda r:r['user_purchase_rate'])['name']=='Jeddah'
+assert not any(r['name'] in ['Jazan','Cairo'] for r in eligible)
+assert sum(r['buyers'] for r in cityrows)==117 and buyers['total_buyers']==114
 html=(root/'analytics/index.html').read_text(encoding='utf-8')
 embedded=re.search(r'<script id="report-data" type="application/json">(.*?)</script>',html,re.S)
 assert json.loads(embedded[1])==data

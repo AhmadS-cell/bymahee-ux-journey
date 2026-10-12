@@ -141,6 +141,36 @@
       "label": "Configuration inspection limits",
       "status": "pass",
       "detail": "Google tag read-only, event retention 2 months and user retention 14 months; domain and referral list values not verified."
+    },
+    {
+      "label": "Buyer devices same-period reconciliation",
+      "status": "pass",
+      "detail": "3 rows; all and purchase-only event counts sum to 118, revenue to SAR58171.08; same dates and dimension labels."
+    },
+    {
+      "label": "Buyer browsers same-period reconciliation",
+      "status": "pass",
+      "detail": "8 rows; all and purchase-only event counts sum to 118, revenue to SAR58171.08; same dates and dimension labels."
+    },
+    {
+      "label": "Buyer operating_systems same-period reconciliation",
+      "status": "pass",
+      "detail": "6 rows; all and purchase-only event counts sum to 118, revenue to SAR58171.08; same dates and dimension labels."
+    },
+    {
+      "label": "Buyer models same-period reconciliation",
+      "status": "pass",
+      "detail": "126 rows; all and purchase-only event counts sum to 118, revenue to SAR58171.08; same dates and dimension labels."
+    },
+    {
+      "label": "Buyer cities same-period reconciliation",
+      "status": "pass",
+      "detail": "226 rows; all and purchase-only event counts sum to 118, revenue to SAR58171.08; same dates and dimension labels."
+    },
+    {
+      "label": "Buyer sample eligibility",
+      "status": "pass",
+      "detail": "Jazan 1/5 and Cairo 1/6 excluded from positive ranking; Jeddah 53/2181 included. City purchaser row sum is 117 vs 114 unique buyers; not added as different people."
     }
   ],
   "open_questions": [
@@ -165,5 +195,5 @@
       "status": "GA4 stream inactive; current Salla sales not verified"
     }
   ],
-  "review_basis": "Reopened native GA4 source/medium, events, closed and open purchase journey reports on 2026-10-12. All 24 source rows and 14 event rows matched. Other aggregate tables reconciled with the original capture. Reopened BigQuery links, data stream, Google tag overview and retention settings; recorded observed configuration and unverified settings separately."
+  "review_basis": "Reopened native GA4 source/medium, events, closed and open purchase journey reports on 2026-10-12. All 24 source rows and 14 event rows matched. Other aggregate tables reconciled with the original capture. Reopened BigQuery links, data stream, Google tag overview and retention settings; recorded observed configuration and unverified settings separately. Read-only all-user and purchase-event-only technology and city reports reviewed for the same 90-day window."
 }
