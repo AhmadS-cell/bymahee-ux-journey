@@ -1,0 +1,22 @@
+.organic-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:22px 0}
+.organic-summary article{background:var(--paper);border:1px solid var(--line);border-top:4px solid var(--olive);border-radius:12px;padding:24px;min-width:0}
+.organic-summary article:nth-child(2){border-top-color:var(--blue)}
+.organic-summary article.organic-missing{border-top-color:var(--rose)}
+.organic-summary article>strong{display:block;font-size:38px;line-height:1.6;margin:12px 0;color:var(--dark)}
+.organic-summary article>strong small{display:inline;font-size:14px;font-weight:500}
+.organic-summary article>strong.organic-unavailable{font-size:23px}
+.organic-summary p{font-size:14px;line-height:1.9;margin:10px 0}
+.organic-summary article>small{display:block;font-size:12px;line-height:1.9;margin:12px 0;color:var(--muted)}
+.organic-summary h3{font-size:19px;margin:13px 0}
+.organic-summary .inline-brand{align-items:flex-start;font-size:14px;line-height:1.8}
+.organic-group{margin:18px 0}.organic-group h4{display:flex;justify-content:space-between;gap:12px;font-size:14px;margin-bottom:9px}
+.organic-group .bar-track{height:8px}.organic-group p{font-size:12px;color:var(--muted);margin:7px 0}
+.organic-pages{margin:24px 0}.organic-pages .buyer-row-heading h4{font-size:15px;overflow-wrap:anywhere;min-width:0}
+.organic-pages .buyer-rate{font-size:22px}.organic-pages .buyer-rate small{max-width:115px}
+.organic-pages button{margin-top:18px;min-height:44px}.organic-page-path{display:block;overflow-wrap:anywhere;font-size:12px;color:var(--muted);margin:7px 0}
+.organic-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin:25px 0}
+.organic-steps article>span{font-size:25px;color:var(--olive);font-weight:800}.organic-steps h4{margin:9px 0;font-size:17px}.organic-steps p{font-size:14px;line-height:1.9}
+.organic-keywords details{margin-top:20px}.organic-keywords details p{font-size:13px;line-height:2}
+@media(max-width:800px){.organic-summary,.organic-steps{grid-template-columns:1fr}.organic-summary article{padding:21px}.organic-summary article>strong{font-size:34px}.organic-pages .buyer-row-heading{flex-wrap:wrap}.organic-pages .buyer-row-heading h4{flex-basis:100%}.organic-pages .buyer-rate small{text-align:right;max-width:none}}
+@media(max-width:400px){.organic-pages .buyer-row-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.organic-pages .buyer-row-stats>span:last-child{grid-column:1/-1}}
+@media print{.organic-summary{grid-template-columns:repeat(3,minmax(0,1fr))}.organic-steps{grid-template-columns:repeat(3,minmax(0,1fr))}#organic-more,.organic-pages .buyer-controls{display:none}}

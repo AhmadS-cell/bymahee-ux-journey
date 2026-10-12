@@ -1,0 +1,15 @@
+'use strict';
+const OS=D.organic_search;
+$('organic-groups').innerHTML=OS.landing_groups.map(g=>`<div class="organic-group"><h4><span>${esc(g.name)}</span><b>${fmt(g.sessions)} جلسة</b></h4><div class="bar-track"><div class="bar-fill" style="width:${g.sessions/593*100}%;background:var(--olive)" aria-hidden="true"></div></div><p>${fmt(100*g.sessions/593,1)}% من جلسات البحث المجاني · ${fmt(g.purchases)} شراء · ${fmt(g.revenue,2)} ريال</p></div>`).join('');
+let organicLimit=10;
+function organicTitle(path){if(path==='/')return 'الرئيسية · /';if(path==='/ar')return 'الرئيسية العربية';if(path==='/en')return 'الرئيسية الإنجليزية';if(path==='/ar/cart')return 'السلة';if(path==='/ar/search')return 'البحث داخل المتجر';if(path==='(not set)')return 'صفحة دخول غير محددة';if(path.includes('· مجمّعة'))return path;const parts=path.split('/').filter(Boolean);const slug=/^[pc]\d+$/.test(parts.at(-1))?parts.at(-2):parts.at(-1);return slug?.replaceAll('-',' ')||path}
+function renderOrganicPages(){
+  const q=normalizeSearch($('organic-search').value.trim()),sort=$('organic-sort').value;
+  const rows=OS.landing.filter(r=>!q||normalizeSearch(r.path+' '+organicTitle(r.path)).includes(q)).sort((a,b)=>b[sort]-a[sort]||b.sessions-a.sessions);
+  $('organic-count').textContent=`عرض ${Math.min(organicLimit,rows.length)} من ${rows.length} صفًا · الترتيب حسب ${$('organic-sort').selectedOptions[0].textContent}`;
+  $('organic-pages').innerHTML=rows.slice(0,organicLimit).map(r=>`<article class="buyer-row" data-evidence="${r.sessions<200?'small':'low'}"><div class="buyer-row-heading"><h4>${esc(organicTitle(r.path))}</h4><span class="buyer-rate">${r.session_purchase_rate===null?'غير مجمّع':fmt(r.session_purchase_rate,2)+'%'}<small>${r.session_purchase_rate===null?'لا نجمع نسب الصفوف':'نسبة الجلسات التي اشترت'}</small></span></div><bdi class="organic-page-path">${esc(r.path)}</bdi><div class="buyer-row-stats"><span><b>${fmt(r.sessions)}</b>جلسة</span><span><b>${fmt(r.purchases)}</b>شراء مسجّل</span><span><b>${fmt(r.revenue,2)}</b>ريال إيراد</span></div><small class="buyer-status">${r.private_aggregate?'مجموعة صفحات خاصة؛ تفاصيل المسارات محجوبة':r.path==='(not set)'?'نقص في تحديد صفحة الدخول؛ يحتاج فحص التتبع':r.sessions<200?'عينة تحت 200 جلسة؛ لا نرتّبها كأفضل معدل تحويل':'حجم مناسب لفحص الزيارات؛ لا يثبت سبب الأداء'}</small>${r.private_aggregate?'':`<details><summary>التفاعل والأشخاص المسجّلون</summary><p>${fmt(r.users)} مستخدمًا نشطًا · ${fmt(r.new_users)} مستخدمًا جديدًا · متوسط التفاعل لكل جلسة ${timeArabic(r.time)}. لا نجمع الأشخاص عبر الصفحات.</p></details>`}</article>`).join('')||'<p class="note">لا توجد صفحة تطابق البحث. جرّب كلمة أخرى.</p>';
+  $('organic-more').hidden=rows.length<=organicLimit;
+}
+for(const id of ['organic-search','organic-sort'])$(id).addEventListener(id==='organic-search'?'input':'change',()=>{organicLimit=10;renderOrganicPages()});
+$('organic-more').addEventListener('click',()=>{organicLimit+=10;renderOrganicPages()});renderOrganicPages();
+for(const item of sectionIndex)item.text=document.getElementById(item.id).textContent;

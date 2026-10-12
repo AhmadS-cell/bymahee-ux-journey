@@ -2,7 +2,7 @@
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urlparse,unquote
-import json,re
+import json,re,csv
 root=Path(__file__).resolve().parent
 class Page(HTMLParser):
     def __init__(self):super().__init__();self.ids=[];self.refs=[]
@@ -62,6 +62,25 @@ eligible=[r for r in cityrows if r['name']!='(not set)' and r['users']>=buyers['
 assert max(eligible,key=lambda r:r['user_purchase_rate'])['name']=='Jeddah'
 assert not any(r['name'] in ['Jazan','Cairo'] for r in eligible)
 assert sum(r['buyers'] for r in cityrows)==117 and buyers['total_buyers']==114
+organic=json.loads((root/'analytics/organic-search.json').read_text(encoding='utf-8'))
+assert organic==data['organic_search']
+assert organic['period_from']==data['metadata']['period_from'] and organic['period_to']==data['metadata']['period_to']
+assert organic['organic_source']==next(r for r in data['sources'] if r['name']=='google / organic')
+assert organic['paid_source']==next(r for r in data['sources'] if r['name']=='google / cpc')
+assert organic['organic_source']['session_purchase_rate']==2.19
+for rows in [organic['landing'],organic['landing_groups']]:
+    for k,v in [('sessions',593),('purchases',13),('revenue',6528)]:assert abs(sum(r[k] for r in rows)-v)<.01,(k,v)
+assert organic['landing_original_rows']==118 and organic['landing_private_rows']==9
+assert len(organic['landing'])==110
+assert not any(re.search(r'/(account|checkout)(/|$)',r['path']) for r in organic['landing'])
+assert all(r['session_purchase_rate'] is None for r in organic['landing'] if r['private_aggregate'])
+assert organic['search_console']['link_count']==0 and organic['search_console']['queries'] is None
+assert organic['google_ads']['link_count']==1 and not organic['google_ads']['cost_verified']
+assert not organic['query_purchase_join_verified'] and not organic['store_changes_applied']
+with (root/'analytics/google-organic-landing.csv').open(encoding='utf-8-sig',newline='') as f:organic_csv=list(csv.DictReader(f))
+assert [r['path'] for r in organic_csv]==[r['path'] for r in organic['landing']]
+for k,v in [('sessions',593),('purchases',13),('revenue',6528)]:assert abs(sum(float(r[k]) for r in organic_csv)-v)<.01
+assert not any(re.search(r'/(account|checkout)(/|$)',r['path']) for r in organic_csv)
 html=(root/'analytics/index.html').read_text(encoding='utf-8')
 embedded=re.search(r'<script id="report-data" type="application/json">(.*?)</script>',html,re.S)
 assert json.loads(embedded[1])==data

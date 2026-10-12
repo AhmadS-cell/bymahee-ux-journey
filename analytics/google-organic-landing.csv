@@ -1,0 +1,111 @@
+﻿path,sessions,users,new_users,time,purchases,revenue,session_purchase_rate,private_aggregate
+/,139,114,108,2m 15s,4,2208.0,2.88,False
+/ar,121,83,65,1m 53s,1,350.0,0.83,False
+(not set),34,22,0,0s,0,0.0,0.0,False
+/ar/cart,15,7,0,1m 26s,0,0.0,0.0,False
+/ar/شنط-توت/c1895583291,15,7,0,1m 15s,1,237.75,6.67,False
+/ar/شنط/c541461361,15,11,3,1m 41s,0,0.0,0.0,False
+/ar/bee-robe/p1100134920,11,1,0,9s,0,0.0,0.0,False
+/ar/كلاتش/c232686653,11,4,1,30s,0,0.0,0.0,False
+/ar/الارواب/c1223007139,8,1,0,10s,0,0.0,0.0,False
+/ar/هدايا/c819598255,8,3,0,1m 28s,0,0.0,0.0,False
+/en,8,7,5,1m 52s,0,0.0,0.0,False
+/ar/ملابس-يومية/c308893273,6,3,0,1m 20s,0,0.0,0.0,False
+/en/bags/c541461361,6,3,2,26s,0,0.0,0.0,False
+/ar/amalfi-blue-maxi-dress/p1844808448,5,2,0,2m 59s,0,0.0,0.0,False
+/ar/cherry-tote-large/p638217027,5,4,2,23s,0,0.0,0.0,False
+/ar/ocean-robe/p1095952648,5,2,0,16s,0,0.0,0.0,False
+/ar/sunshine-tote-medium/p1691680104,5,5,1,6s,0,0.0,0.0,False
+/ar/شنط-باوتش/c655830842,5,3,1,19s,0,0.0,0.0,False
+/ar/capri-pajama-with-bag/p1052787320,4,2,0,1m 56s,0,0.0,0.0,False
+/ar/cherry-dark-blue-tote-bag-medium/p1583422598,4,2,0,4s,0,0.0,0.0,False
+/ar/flora-riviera-large-duffle-bag/p612871669,4,3,0,18s,0,0.0,0.0,False
+/ar/heartbeat-pajamas-with-bag/p1650635652,4,4,3,3s,0,0.0,0.0,False
+/ar/pink-heart-tote-medium/p338308478,4,1,0,36s,0,0.0,0.0,False
+/ar/tiger-lily-pouches-set-of-3/p914062229,4,2,0,14s,0,0.0,0.0,False
+/ar/شنط-قطنية/c1017943806,4,3,0,2m 21s,0,0.0,0.0,False
+/ar/dune-duffle/p706361133,3,1,0,2m 17s,0,0.0,0.0,False
+/ar/lime-pajamas-with-bag/p314736883,3,2,1,22s,0,0.0,0.0,False
+/ar/ml/p1343196008,3,1,0,1m 27s,0,0.0,0.0,False
+/ar/pink-tiger-duffle/p1241752375,3,1,0,0s,0,0.0,0.0,False
+/ar/pink-tiger-pajamas-with-bag/p1154539968,3,3,0,24s,0,0.0,0.0,False
+/ar/pink-tiger-robe/p1055973080,3,1,0,55s,0,0.0,0.0,False
+/ar/search,3,3,0,3m 32s,1,407.5,33.33,False
+/ar/tiger-robe/p1343196008,3,3,0,11s,0,0.0,0.0,False
+/ar/الفساتين/c68686586,3,3,0,29s,0,0.0,0.0,False
+/ar/شنط-الدافل/c1603289821,3,2,1,28s,0,0.0,0.0,False
+/latest-products,3,2,2,1m 15s,0,0.0,0.0,False
+/ar/blush-butterfly-bag-charm/p357055717,2,2,0,1m 46s,0,0.0,0.0,False
+/ar/candy-shell-beaded-bag-charm/p931164969,2,1,0,27s,0,0.0,0.0,False
+/ar/cotton-candy-small-clutch/p2104226706,2,1,0,1m 12s,1,461.0,50.0,False
+/ar/dusty-pouches-set-of-3/p693344188,2,2,1,0s,0,0.0,0.0,False
+/ar/lavender-tote-large/p2118983701,2,1,0,0s,0,0.0,0.0,False
+/ar/lemon-tote-bag-medium/p906677745,2,1,0,0s,0,0.0,0.0,False
+/ar/lemons-robe/p748108878,2,2,0,47s,0,0.0,0.0,False
+/ar/lobster-bay-pouches-set-of-3/p868087140,2,2,2,4s,0,0.0,0.0,False
+/ar/lobster-hair-organizer-bag/p1987236914,2,2,0,1s,0,0.0,0.0,False
+/ar/ocean-tote-large/p2029346615,2,2,1,2s,0,0.0,0.0,False
+/ar/orange-tiger-duffle/p1473064169,2,2,1,4m 10s,0,0.0,0.0,False
+/ar/orange-tiger-tote-medium/p1245728894,2,2,1,3s,0,0.0,0.0,False
+/ar/pink-tiger-tote-medium/p2016750321,2,1,0,2m 34s,0,0.0,0.0,False
+/ar/red-metallic-clutch-small/p2104246066,2,2,2,4s,0,0.0,0.0,False
+/ar/sunlit-bloom-beach-cover-up/p2122470845,2,1,0,0s,0,0.0,0.0,False
+/ar/sunset-robe/p593514519,2,2,1,26s,0,0.0,0.0,False
+/ar/tiger-lily-large-tote/p986725942,2,1,0,3s,0,0.0,0.0,False
+/ar/أرواب-حمام/c99937326,2,1,0,35s,0,0.0,0.0,False
+/ar/البجايم/c1815508314,2,1,0,31s,0,0.0,0.0,False
+/ar/تخفيضات/c685950653,2,2,1,8m 43s,0,0.0,0.0,False
+/en/robes/c1223007139,2,1,0,1m 49s,0,0.0,0.0,False
+/en/تخفيضات/c685950653,2,1,1,0s,0,0.0,0.0,False
+/ar/barbie-large-tote/p697744851,1,1,0,0s,0,0.0,0.0,False
+/ar/blue-lemons-large-tote-bag/p1044949180,1,1,0,53s,0,0.0,0.0,False
+/ar/blue-lemons-pouches-set-of-3/p1375268047,1,1,0,1m 15s,0,0.0,0.0,False
+/ar/blue-shell-pouches-set-of-3/p434846913,1,1,0,4m 53s,0,0.0,0.0,False
+/ar/blue-shell-tote-bag-medium/p2027317061,1,1,0,0s,0,0.0,0.0,False
+/ar/candy-strip-tote-small/p1302746739,1,1,0,0s,0,0.0,0.0,False
+/ar/capri-duffle/p1333158787,1,1,0,23s,0,0.0,0.0,False
+/ar/capri-tote-bag-large/p379010824,1,1,0,31s,0,0.0,0.0,False
+/ar/dune-duffle-شنطة-دافل-عملية-للسفر-والجيم/p706361133,1,1,0,6s,0,0.0,0.0,False
+/ar/flora-medium-tote-bag/p891512176,1,1,0,0s,0,0.0,0.0,False
+/ar/flora-pouches-set-of-3/p1501761017,1,1,1,5s,0,0.0,0.0,False
+/ar/golden-leopard-pouches-set-of-3/p289867285,1,1,0,0s,0,0.0,0.0,False
+/ar/harbor-large-tote/p29603493,1,1,0,0s,0,0.0,0.0,False
+/ar/latest-products,1,1,0,30s,0,0.0,0.0,False
+/ar/lava-wave-clutch/p389315510,1,1,0,0s,0,0.0,0.0,False
+/ar/lemon-large-tote-bag/p1089681664,1,1,0,2m 24s,1,510.0,100.0,False
+/ar/lilac-waffle-cotton-bathrobe/p447127827,1,1,0,0s,0,0.0,0.0,False
+/ar/liliac-pouches-set-of-3/p1684934854,1,1,0,10s,0,0.0,0.0,False
+/ar/liliac-tote-small/p1992774715,1,1,1,0s,0,0.0,0.0,False
+/ar/lobster-bay-duffle/p529313437,1,1,0,0s,0,0.0,0.0,False
+/ar/mahee-cherry-travel-set/p1445113882,1,1,0,0s,0,0.0,0.0,False
+/ar/ml/p1055973080,1,1,1,43m 16s,1,415.0,100.0,False
+/ar/olive-maxi-dress/p298248707,1,1,0,0s,0,0.0,0.0,False
+/ar/pink-tiger-pouches-set-of-3/p2106436854,1,1,0,2s,0,0.0,0.0,False
+/ar/powder-sky-pouches-set-of-3/p465781139,1,1,0,16s,0,0.0,0.0,False
+/ar/red-flora-robe/p685224033,1,1,0,31s,0,0.0,0.0,False
+/ar/thankyou/ENYanBp,1,1,0,0s,0,0.0,0.0,False
+/ar/thankyou/XAzRNoD,1,1,0,0s,0,0.0,0.0,False
+/ar/tiger-lily-pajamas/p1954854880,1,1,0,0s,0,0.0,0.0,False
+/ar/vintage-robe/p1020036171,1,1,0,0s,0,0.0,0.0,False
+/ar/vintage-waffle-cotton-bathrobe/p1894323646,1,1,0,56s,0,0.0,0.0,False
+/ar/اكسسوارات-الشنط/c205085314,1,1,0,4m 18s,0,0.0,0.0,False
+/ar/شنط-دفل-نسائية-orange-tiger-duffle-أنيقة/p1473064169,1,1,1,2m 04s,0,0.0,0.0,False
+/ar/غطاء-ملابس-السباحة-سارونج/c9076220,1,1,0,2m 56s,0,0.0,0.0,False
+/ar/قلادات/c433416316,1,1,0,1m 46s,0,0.0,0.0,False
+/bloom-maxi-dress/p1879016421,1,1,1,9s,0,0.0,0.0,False
+/blue-floral-duffle-bag/p60807180,1,1,1,3m 49s,0,0.0,0.0,False
+/en/cherry-dark-blue-duffle-bag/p718648127,1,1,1,4m 39s,0,0.0,0.0,False
+/en/dresses/c68686586,1,1,0,3m 51s,0,0.0,0.0,False
+/en/duffle-bags/c1603289821,1,1,1,5s,0,0.0,0.0,False
+/en/quilted-bags/c1017943806,1,1,0,46s,0,0.0,0.0,False
+/en/thankyou/gBQAwpE,1,1,0,0s,0,0.0,0.0,False
+/en/tiger-lily-pajamas/p1954854880,1,1,1,6s,0,0.0,0.0,False
+/en/vintage-robe/p1020036171,1,1,1,3m 33s,0,0.0,0.0,False
+/golden-hour-pouches-set-of-3/p1732495853,1,1,1,23s,0,0.0,0.0,False
+/lemon-large-tote-bag/p1089681664,1,1,0,0s,0,0.0,0.0,False
+/liliac-tote-small/p1992774715,1,1,1,5m 47s,0,0.0,0.0,False
+/london-style-bear-bag-charm/p339640059,1,1,1,26s,0,0.0,0.0,False
+/ml/p1055973080,1,1,1,24s,0,0.0,0.0,False
+/ml/p1154539968,1,1,1,6s,0,0.0,0.0,False
+/الفساتين/c68686586,1,1,1,2s,0,0.0,0.0,False
+صفحات الحساب والدفع · مجمّعة,15,,,,3,1938.75,,True

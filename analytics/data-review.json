@@ -171,6 +171,26 @@
       "label": "Buyer sample eligibility",
       "status": "pass",
       "detail": "Jazan 1/5 and Cairo 1/6 excluded from positive ranking; Jeddah 53/2181 included. City purchaser row sum is 117 vs 114 unique buyers; not added as different people."
+    },
+    {
+      "label": "Google sources re-read",
+      "status": "pass",
+      "detail": "Google organic 593 sessions / 13 purchase events / SAR6528 / native purchase-session rate 2.19%; Google cpc 3 / 0 / 0."
+    },
+    {
+      "label": "Organic landing reconciliation",
+      "status": "pass",
+      "detail": "All 118 landing rows reconcile to 593 sessions, 13 purchase events and SAR6528. Nine account/checkout rows aggregated without identifiers."
+    },
+    {
+      "label": "Search Console access limitation",
+      "status": "pass",
+      "detail": "No current GA4 Search Console links; current Search Console property picker does not include bymahee. Query metrics unavailable, not zero."
+    },
+    {
+      "label": "Google Ads integration",
+      "status": "pass",
+      "detail": "One current Google Ads link, dated 2026-08-30. Existence of link does not verify active campaigns, spend or campaign quality."
     }
   ],
   "open_questions": [
