@@ -1,5 +1,9 @@
 // SVG is intentionally schematic; the adjacent counts and percentages are exact.
-function renderFunnelVisual(steps,labels,open){
+function renderFunnelVisual(steps,labels,open,reach=false){
+  if(reach){
+    $('funnel-visual').innerHTML=`<div class="reach-rows">${steps.map((count,i)=>`<article class="reach-row" style="--order:${i}"><div class="reach-heading"><span><small>الخطوة ${i+1} · عدّ مستقل</small><b>${esc(labels[i])}</b></span><strong>${fmt(count)} <small>مستخدمًا</small></strong></div><div class="reach-track" aria-hidden="true"><span style="--reach:${count/T.total_users};background:${['#67622a','#77713a','#92875b','#a55369','#713047'][i]}"></span></div></article>`).join('')}</div>`;
+    return;
+  }
   const compact=window.matchMedia('(max-width: 650px)').matches;
   const spacing=compact?160:100,stageHeight=compact?148:88;
   const widths=open?[560,560,560,560,560]:[640,524,408,292,176],colors=['#67622a','#77713a','#ded8b7','#d6a9b2','#713047'];

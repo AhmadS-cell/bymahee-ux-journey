@@ -33,6 +33,9 @@ assert sum(r['purchases'] for r in data['channels'])==118
 assert abs(sum(r['revenue'] for r in data['sources'])-58171.08)<.01
 assert data['funnel_closed']['steps']==[1787,870,118,14,8]
 assert data['funnel_open']['steps']==[1785,874,118,14,10]
+assert data['totals']['sessions']==10340 and data['totals']['total_users']==8092
+assert [next(r for r in data['events'] if r['name']==key)['users'] for key in ['session_start','view_item','add_to_cart','begin_checkout','purchase']]==[7978,3106,497,140,114]
+assert next(r for r in data['events'] if r['name']=='session_start')['events']-next(r for r in data['funnel_period_events'] if r['name']=='session_start')['events']==7509
 assert sum(r['units'] for r in data['products'])==270
 assert not (root/'analytics/evidence').exists()
 assert not any(k in data['metadata'] for k in ['account_id','property_id','stream_id','measurement_id'])

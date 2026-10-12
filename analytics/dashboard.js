@@ -39,7 +39,30 @@ document.querySelectorAll('[data-channel-view]').forEach(b=>b.addEventListener('
 $('landing-body').innerHTML=D.landing.map(r=>`<tr><td><bdi>${esc(r.path)}</bdi></td><td>${n(fmt(r.sessions))}</td><td>${n(fmt(r.purchases))}</td><td>${n(fmt(r.session_purchase_rate,2)+'%')}</td><td class="revenue-cell">${n(fmt(r.revenue,2))}</td><td>${timeArabic(r.time)}</td></tr>`).join('');
 const cotton=D.cotton_sources.filter(r=>r.sessions>=100).sort((a,b)=>b.sessions-a.sessions);
 $('cotton-bars').innerHTML=cotton.map(r=>`<div class="cotton-source"><div class="cotton-row-head">${sourceIdentity(r.source,true)}<strong>${n(fmt(r.sessions))} زيارة</strong></div><div class="bar-track"><div class="bar-fill" style="width:${100*r.sessions/2344}%" aria-hidden="true"></div></div><small>${fmt(r.purchases)} شراء مسجّل · ${fmt(r.session_purchase_rate,2)}% زيارات اشترت · ${timeArabic(r.time)} تفاعل</small></div>`).join('');
-function funnel(){const open=$('funnel-mode').value==='open';const steps=D[open?'funnel_open':'funnel_closed'].steps;const labels=['بدء جلسة','مشاهدة منتج','إضافة للسلة','بدء إتمام الطلب','الشراء'];$('funnel-chart').innerHTML=steps.map((val,i)=>`<article class="funnel-step"><small>المرحلة ${i+1}</small><h4>${labels[i]}</h4><strong>${fmt(val)}</strong><div class="bar-track"><div class="bar-fill" style="width:${val/steps[0]*100}%" aria-hidden="true"></div></div>${i&&!open?`<span class="continuation">${fmt(val/steps[i-1]*100,2)}% استمرار</span><small>${fmt(steps[i-1]-val)} لم يُعدّوا بالخطوة التالية</small>`:'<span class="continuation">'+(open?'عداد الفانل المفتوح':'نقطة البداية')+'</span>'}</article>`).join('');if(typeof renderFunnelVisual==='function')renderFunnelVisual(steps,labels,open);$('funnel-note').textContent=open?'الفانل المفتوح يسمح بالدخول من أي خطوة؛ لذلك لا نعطي نسبًا مستقلة للتسرب بقسمة هذه العدادات. عدد الشراء المفتوح 10 مستخدمين، وليس جميع أحداث purchase الثلاثين في التقرير المجمّع.':'الفانل المغلق يعدّ المستخدمين الذين أكملوا الخطوات بالترتيب، ويمكن أن توجد أحداث بين الخطوات. نسبة اكتمال التسلسل 0.45% (8 ÷ 1,787)؛ ليست معدل التحويل الكلي للمتجر.'}
+function funnel(){
+  const mode=$('funnel-mode').value,reach=mode==='reach_90',open=mode==='open';
+  const keys=['session_start','view_item','add_to_cart','begin_checkout','purchase'];
+  const steps=reach?keys.map(key=>D.events.find(row=>row.name===key).users):D[open?'funnel_open':'funnel_closed'].steps;
+  const labels=reach?['بدأوا جلسة','شاهدوا منتجًا','أضافوا للسلة','بدأوا إتمام الطلب','سجّلوا شراءً']:['بدء جلسة','مشاهدة منتج','إضافة للسلة','بدء إتمام الطلب','الشراء'];
+  $('funnel-view-title').textContent=reach?'عدد المستخدمين الذين سجّلوا كل خطوة خلال الفترة الكاملة':open?'الفانل الذي يسمح بالدخول من أي مرحلة':'المستخدمون الذين اتبعوا الخطوات بالترتيب';
+  $('funnel-view-description').textContent=reach?'كل صف عدّ مستقل للمستخدمين؛ هذه ليست مجموعة واحدة مرّت بكل الخطوات بالترتيب.':'هذا الرسم يعدّ المستخدمين وفق قواعد الفانل، وليس إجمالي الجلسات أو عدد الطلبات.';
+  $('funnel-period-badge').textContent=reach?'14 يوليو–11 أكتوبر 2026 · 90 يومًا':'13 أغسطس–11 أكتوبر 2026 · 60 يومًا فقط';
+  $('funnel-graphic-title').textContent=reach?'حجم كل خطوة · مستخدمون، لا جلسات':open?'عدادات الفانل المفتوح':'الفانل المتسلسل · جزء من الفترة';
+  $('funnel-graphic-caption').textContent=reach?'الأشرطة تقارن حجم كل خطوة من أصل 8,092 مستخدمًا في تقرير الأحداث. لا تعبّر عن انتقال الأشخاص أنفسهم بين الخطوات.':'عرض الشكل مبسّط للقراءة ولا يتناسب مع الأعداد؛ راجع الأرقام أدناه. لا تمثل البداية جميع مستخدمي الـ90 يومًا.';
+  $('funnel-chart').hidden=reach;
+  $('funnel-chart').innerHTML=reach?'':steps.map((val,i)=>`<article class="funnel-step"><small>المرحلة ${i+1}</small><h4>${labels[i]}</h4><strong>${fmt(val)}</strong><small>مستخدمًا في هذا الفانل</small><div class="bar-track"><div class="bar-fill" style="width:${val/steps[0]*100}%" aria-hidden="true"></div></div>${i&&!open?`<span class="continuation">${fmt(val/steps[i-1]*100,2)}% استمرار ضمن الفانل</span>`:'<span class="continuation">'+(open?'يمكن الدخول من أي خطوة':'بداية الفترة المتاحة')+'</span>'}</article>`).join('');
+  if(typeof renderFunnelVisual==='function')renderFunnelVisual(steps,labels,open,reach);
+  $('funnel-note').textContent=reach?'الصورة الكاملة: 10,340 جلسة، 8,092 إجمالي مستخدمين، و118 عملية شراء سجّلها 114 مستخدمًا. ظهر حدث بدء جلسة لدى 7,978 مستخدمًا؛ هذا عدّ حدث مستقل، وليس إجمالي مستخدمي المتجر. لا نحسب نسب تسرب بقسمة عدادات هذه الصفوف.':open?'هذا عدّ الفانل المفتوح لفترة الـ60 يومًا فقط. يصل إلى 10 مستخدمين للشراء؛ تقرير الأحداث للفترة نفسها سجّل 30 عملية شراء لدى 29 مستخدمًا. لا نعطي نسب تسرب بقسمة عدادات الفانل المفتوح.':'هذا الفانل لفترة الـ60 يومًا فقط. يبدأ بـ1,787 مستخدمًا ويصل إلى 8 اشتروا بعد التسلسل؛ تقرير الأحداث للفترة نفسها سجّل 30 عملية شراء لدى 29 مستخدمًا. اكتمال هذا التسلسل 0.45%، وليس معدل تحويل المتجر كله.';
+}
+$('funnel-total-sessions').textContent=fmt(T.sessions);
+$('funnel-total-users').textContent=fmt(T.total_users);
+$('funnel-total-purchases').textContent=fmt(T.purchases);
+$('funnel-purchasers').textContent=`سجّلها ${fmt(T.purchasers)} مستخدمًا؛ قد يشتري الشخص أكثر من مرة.`;
+const allStarts=D.events.find(row=>row.name==='session_start');
+const recentStarts=D.funnel_period_events.find(row=>row.name==='session_start');
+$('funnel-earlier-starts').textContent=fmt(allStarts.events-recentStarts.events)+' من أصل '+fmt(allStarts.events);
+const scopeRows=[['أحداث بدء جلسة',allStarts.events,recentStarts.events],['مستخدمون ظهر لهم بدء جلسة',allStarts.users,recentStarts.users],['أحداث شراء',T.purchases,D.funnel_period_events.find(row=>row.name==='purchase').events],['مستخدمون ظهر لهم شراء',T.purchasers,D.funnel_period_events.find(row=>row.name==='purchase').users]];
+$('funnel-scope-body').innerHTML=scopeRows.map(([label,full,recent])=>`<tr><th>${esc(label)}</th><td>${fmt(full)}</td><td>${fmt(recent)}</td></tr>`).join('');
 $('funnel-mode').addEventListener('change',funnel);funnel();
 $('event-map').innerHTML=['session_start','view_item','add_to_cart','view_cart','begin_checkout','purchase'].map(key=>{const r=D.events.find(r=>r.name===key);return `<div><bdi>${key}</bdi><strong>${fmt(r.events)}</strong><small>${fmt(r.users)} مستخدمًا سجّل الحدث</small></div>`}).join('');
 let productLimit=20;
