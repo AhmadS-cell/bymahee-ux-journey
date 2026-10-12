@@ -45,4 +45,4 @@ assert all(c['status']=='pass' for c in review['checks'])
 html=(root/'analytics/index.html').read_text(encoding='utf-8')
 embedded=re.search(r'<script id="report-data" type="application/json">(.*?)</script>',html,re.S)
 assert json.loads(embedded[1])==data
-print('PASS: both screens, local assets/anchors, source data, 21 review checks, aggregate publication scope.')
+print(f"PASS: both screens, local assets/anchors, source data, {len(review['checks'])} review checks, aggregate publication scope.")

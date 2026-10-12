@@ -106,6 +106,21 @@
       "label": "Attribution rounding",
       "status": "pass",
       "detail": "Displayed decimals sum to 118.01 and SAR58171.09; report totals stay 118 and SAR58171.08."
+    },
+    {
+      "label": "Fresh live event rows unchanged",
+      "status": "pass",
+      "detail": "Reopened GA4: all 14 event rows match, including 8092 total users and the independent step counts 7978, 3106, 497, 140, 114."
+    },
+    {
+      "label": "Fresh live funnel totals unchanged",
+      "status": "pass",
+      "detail": "Reopened both native purchase journeys for Aug13-Oct11: closed [1787,870,118,14,8], open [1785,874,118,14,10]."
+    },
+    {
+      "label": "Public aggregate tables unchanged",
+      "status": "pass",
+      "detail": "17 published aggregate tables match the original private capture; no numbers adjusted during the interface update."
     }
   ],
   "open_questions": [
@@ -129,5 +144,6 @@
       "metric": "current_sales",
       "status": "GA4 stream inactive; current Salla sales not verified"
     }
-  ]
+  ],
+  "review_basis": "Reopened native GA4 source/medium, events, closed and open purchase journey reports on 2026-10-12. All 24 source rows and 14 event rows matched. Other aggregate tables reconciled with the original capture."
 }

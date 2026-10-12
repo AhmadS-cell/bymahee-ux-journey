@@ -3169,7 +3169,7 @@
   },
   "review": {
     "reviewed_at": "2026-10-12",
-    "basis": "Saved original GA4 DOM tables; numeric reconciliation and interface review",
+    "basis": "Reopened native GA4 source/medium, events, closed and open purchase journey reports on 2026-10-12. All 24 source rows and 14 event rows matched. Other aggregate tables reconciled with the original capture.",
     "instagram_purchase_sources": {
       "ig / social": 42,
       "l.instagram.com / referral": 2
