@@ -121,6 +121,26 @@
       "label": "Public aggregate tables unchanged",
       "status": "pass",
       "detail": "17 published aggregate tables match the original private capture; no numbers adjusted during the interface update."
+    },
+    {
+      "label": "Current BigQuery link inventory",
+      "status": "pass",
+      "detail": "Admin shows No links yet; zero current links. Historical exports elsewhere were not checked."
+    },
+    {
+      "label": "Current collection warning",
+      "status": "pass",
+      "detail": "Stream says no data received in past 48 hours on 2026-10-12; exact cause unknown."
+    },
+    {
+      "label": "Same-period journey comparison",
+      "status": "pass",
+      "detail": "60-day independent event users 874/144/18/29 compared with closed sequence 870/118/14/8; different inclusion rules, no same-session join."
+    },
+    {
+      "label": "Configuration inspection limits",
+      "status": "pass",
+      "detail": "Google tag read-only, event retention 2 months and user retention 14 months; domain and referral list values not verified."
     }
   ],
   "open_questions": [
@@ -145,5 +165,5 @@
       "status": "GA4 stream inactive; current Salla sales not verified"
     }
   ],
-  "review_basis": "Reopened native GA4 source/medium, events, closed and open purchase journey reports on 2026-10-12. All 24 source rows and 14 event rows matched. Other aggregate tables reconciled with the original capture."
+  "review_basis": "Reopened native GA4 source/medium, events, closed and open purchase journey reports on 2026-10-12. All 24 source rows and 14 event rows matched. Other aggregate tables reconciled with the original capture. Reopened BigQuery links, data stream, Google tag overview and retention settings; recorded observed configuration and unverified settings separately."
 }

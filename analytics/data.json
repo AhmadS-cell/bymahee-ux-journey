@@ -8,7 +8,7 @@
     "period_to": "2026-10-11",
     "funnel_from": "2026-08-13",
     "funnel_to": "2026-10-11",
-    "stream_status": "Data collection is not active; no data in past 48 hours",
+    "stream_status": "No data received in past 48 hours; collection inactive warning observed",
     "event_retention_months": 2,
     "user_retention_months": 14,
     "is_live_dashboard": false,
@@ -3178,5 +3178,133 @@
     "instagram_revenue_combined": 22616.75,
     "session_total_note": "Grand total is 10340. Channel rows sum to 9894; source/medium rows sum to 9859. Unexplained differences preserved; no invented rows or adjusted totals.",
     "rounding_note": "Displayed attributed purchase credit sums to 118.01 and revenue to 58171.09 due to rounding; report total is 118 and 58171.08."
+  },
+  "tracking_review": {
+    "reviewed_at": "2026-10-12",
+    "status": "Incomplete journey measurement; exact cause not established",
+    "same_session_90_day_funnel_verified": false,
+    "bigquery": {
+      "current_links": 0,
+      "observed": "No links yet",
+      "historical_archive_checked": false
+    },
+    "collection": {
+      "observed": "No data received in past 48 hours",
+      "tag_quality": "Urgent",
+      "root_cause_verified": false
+    },
+    "access": {
+      "google_tag_read_only": true,
+      "retention_controls_disabled": true,
+      "cross_domain_values_verified": false,
+      "unwanted_referral_values_verified": false,
+      "salla_integration_verified": false
+    },
+    "matched_comparison": {
+      "period_from": "2026-08-13",
+      "period_to": "2026-10-11",
+      "unit": "users",
+      "same_session_constraint_verified": false,
+      "independent_users": [
+        874,
+        144,
+        18,
+        29
+      ],
+      "closed_sequential_users": [
+        870,
+        118,
+        14,
+        8
+      ],
+      "interpretation": "Counts use the same dates and user unit, but different report inclusion rules. Missing from a sequence is not an abandoned purchase. No identified user/session join was performed."
+    },
+    "checkpoints": [
+      {
+        "priority": "فحص جودة الوصول",
+        "title": "من الإعلان إلى الشنط القطنية",
+        "evidence": "صفحة الشنط استقبلت 4,082 جلسة و6 عمليات شراء خلال 90 يومًا. على الصفحة نفسها: تيك توك المدفوع 508 جلسات وصفر شراء؛ سناب المدفوع 417 جلسة و5 عمليات شراء.",
+        "unknown": "هل السبب جمهور الإعلان، وعد الفيديو، سرعة الصفحة، توفر المنتجات أم نقص القياس؟ الجمهور مختلف؛ المقارنة لا تثبت أن الصفحة سببت خسارة.",
+        "test": "افتح روابط الحملات الفعلية داخل متصفح التطبيق وعلى الموبايل؛ افحص الوجهة والمصدر ووعد الإعلان وسرعة التحميل والمخزون. بعد إصلاح القياس، قارن وجهتين تحت الجمهور نفسه.",
+        "acceptance": "الوصول مسجّل بمصدره الصحيح؛ فتح منتج منه يظهر في الجلسة نفسها، مع توثيق أي خطأ أو انتظار واجهه المختبِر.",
+        "link": "#landing",
+        "link_label": "راجع صفحات الوصول"
+      },
+      {
+        "priority": "فحص المنتج والسلة",
+        "title": "من مشاهدة المنتج إلى إضافة للسلة",
+        "evidence": "خلال 90 يومًا سُجّلت مشاهدة منتج لدى 3,106 مستخدمين والإضافة لدى 497. تقرير تجربة المتجر بتاريخ 11 أكتوبر وثّق عناصر عائمة قرب أزرار الشراء.",
+        "unknown": "العدادان مستقلان؛ لا نعرف كم شخصًا شاهد ثم أضاف في الجلسة نفسها، ولا نعتمد الفرق كتسرب. ملاحظات الواجهة تحتاج إعادة فحص قبل تعديلها.",
+        "test": "اختبر المقاسات والمخزون والسعر وزر الإضافة على Safari بالموبايل. تتبّع مشاهدة المنتج وإضافته بالمعرّف نفسه، وسجّل أخطاء الإضافة إن ظهرت.",
+        "acceptance": "ضغطة الإضافة الناجحة تنعكس في السلة وفي حدث واحد صحيح للمنتج؛ سبب أي فشل موثّق من اختبار فعلي.",
+        "link": "../index.html#findings",
+        "link_label": "راجع أدلة تجربة المتجر"
+      },
+      {
+        "priority": "أولوية ربط القياس",
+        "title": "من السلة إلى الدفع والرجوع منه",
+        "evidence": "خلال 60 يومًا: 18 مستخدمًا سُجّل لهم بدء الدفع و29 شراءً في تقرير الأحداث. رحلة الدفع المغلقة 18 ← 0 ← 0 ← 0؛ خطوات الشحن والدفع غائبة. إحالات بوابات الدفع ظاهرة في الإسناد.",
+        "unknown": "هذه الأعداد لا تثبت انسحابًا عند الشحن أو تغيّر هوية الجلسة. قد تغيب أحداث أو تختلف مسارات وشروط إدراج الرحلة؛ السبب لم يُحسم.",
+        "test": "يتابع مسؤول سلة طلب اختبار في بيئة اختبار معتمدة على Safari ثم Android: البداية، الشحن، الدفع والرجوع. يفحص هوية الجلسة والمصدر وتوقيت الأحداث، وحدود ما يدعمه التكامل.",
+        "acceptance": "خطوات الرحلة القابلة للقياس متسلسلة، والمصدر محفوظ، وpurchase واحد يطابق معرّف ومبلغ طلب سلة؛ أي حد في تتبع الدفع مكتوب.",
+        "link": "#tracking-plan",
+        "link_label": "افتح خطة ضبط التتبع"
+      }
+    ],
+    "repair_plan": [
+      {
+        "title": "استعادة استقبال الأحداث قبل الحكم على الأداء",
+        "action": "راجع تطبيق Google Analytics في سلة ومعرّف الوجهة وحاوية GTM المنشورة والموافقة. حدّد من يرسل كل حدث؛ افحص التكرار قبل إضافة أي وسم. تأكد من وصول تصفح اختبار إلى Realtime وتفاصيله إلى DebugView.",
+        "owner": "مسؤول القياس + مسؤول سلة / GTM"
+      },
+      {
+        "title": "توثيق رحلة واحدة بنفس هوية الجلسة",
+        "action": "في اختبار جديد، راقب view_item ثم add_to_cart ثم begin_checkout ثم purchase مع معرّف المستخدم المجهول ومعرّف الجلسة وتوقيت الحدث. تفحّص Safari ومتصفح التطبيق وAndroid. الدخول من حساب سلة أو اختلاف الطريق قد يغيّر التسلسل؛ لا تفرض خطوات لم تحدث.",
+        "owner": "مسؤول القياس + مختبِر تجربة المتجر"
+      },
+      {
+        "title": "التحقق من الدفع ومصدر الزيارة",
+        "action": "راجع الإحالات غير المرغوبة لبوابات الدفع بعد تأكيد المسار. افحص الربط بين نطاقات نملكها وتستخدم الوسم نفسه، وحفظ معامل _gl عند الحاجة. لا تضف نطاق بوابة خارجية للربط دون تحقق. استثناء إحالة الدفع وحده لا يثبت أن هوية الجلسة استمرت.",
+        "owner": "مسؤول القياس + دعم سلة"
+      },
+      {
+        "title": "مطابقة الطلب وإظهار حدود التتبع",
+        "action": "افحص transaction_id وvalue وcurrency وitems، وأن تحديث صفحة النجاح لا يكرر الطلب المسجّل. طابق عينة مع طلبات سلة وحالة السداد والإلغاء والمبلغ. اختبر أحداث الشحن والدفع التي يدعمها التكامل؛ أي خطوة غير مدعومة تظهر كغير مقاسة، وليس صفر عملاء.",
+        "owner": "مسؤول القياس + التجارة / المالية"
+      },
+      {
+        "title": "حفظ تفاصيل الرحلات القادمة",
+        "action": "اطلب مراجعة احتفاظ الأحداث إلى 14 شهرًا إن كان مناسبًا، ثم إعداد تصدير BigQuery اليومي للمستقبل حسب صلاحيات وتكلفة المشروع. الربط الحالي غير موجود؛ إنشاء ربط جديد أو زيادة الاحتفاظ لا يستعيد التفاصيل المحذوفة. وجود أرشيف سابق خارج الربط الحالي لم يُفحص.",
+        "owner": "مالك GA4 + مسؤول Google Cloud"
+      }
+    ],
+    "acceptance": "نقبل القياس بعد توثيق الرحلات الاختبارية: أحداث الخطوات التي حدثت فعلًا مرتبة ضمن الجلسة نفسها ما لم يوجد انتهاء جلسة مشروع، وpurchase واحد مطابق لطلب سلة، ومصدر تسويق محفوظ. بعدها نراجع الطلبات الطبيعية والتغطية، ثم نحسب تسرب جلسات متطابقة بفترة وقواعد معلنة.",
+    "applied_to_store": false,
+    "references": [
+      {
+        "title": "جلسات GA4 ومعرّف الجلسة",
+        "url": "https://support.google.com/analytics/answer/9191807?hl=en"
+      },
+      {
+        "title": "DebugView",
+        "url": "https://support.google.com/analytics/answer/7201382?hl=en"
+      },
+      {
+        "title": "القياس بين النطاقات",
+        "url": "https://support.google.com/analytics/answer/10071811?hl=en"
+      },
+      {
+        "title": "استثناء الإحالات غير المرغوبة",
+        "url": "https://support.google.com/analytics/answer/10327750?hl=en"
+      },
+      {
+        "title": "إعداد تصدير BigQuery",
+        "url": "https://support.google.com/analytics/answer/9823238"
+      },
+      {
+        "title": "ربط Google Analytics في سلة",
+        "url": "https://help.salla.sa/article/الربط-مع-google-analytics-1/z4rsuykst74ym5nh77ct7im2"
+      }
+    ]
   }
 }

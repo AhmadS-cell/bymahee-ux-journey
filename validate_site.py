@@ -42,6 +42,13 @@ assert not any(k in data['metadata'] for k in ['account_id','property_id','strea
 assert not data['sources_manifest']
 review=json.loads((root/'analytics/data-review.json').read_text(encoding='utf-8'))
 assert all(c['status']=='pass' for c in review['checks'])
+tracking=json.loads((root/'analytics/tracking-review.json').read_text(encoding='utf-8'))
+assert tracking==data['tracking_review']
+assert tracking['matched_comparison']['period_from']==data['metadata']['funnel_from']
+assert tracking['matched_comparison']['period_to']==data['metadata']['funnel_to']
+assert tracking['matched_comparison']['independent_users']==[next(r for r in data['funnel_period_events'] if r['name']==k)['users'] for k in ['view_item','add_to_cart','begin_checkout','purchase']]
+assert tracking['matched_comparison']['closed_sequential_users']==data['funnel_closed']['steps'][1:]
+assert not tracking['same_session_90_day_funnel_verified'] and not tracking['applied_to_store']
 html=(root/'analytics/index.html').read_text(encoding='utf-8')
 embedded=re.search(r'<script id="report-data" type="application/json">(.*?)</script>',html,re.S)
 assert json.loads(embedded[1])==data
