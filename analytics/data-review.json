@@ -1,0 +1,133 @@
+{
+  "reviewed_at": "2026-10-12",
+  "period": "2026-07-14 to 2026-10-11",
+  "checks": [
+    {
+      "label": "Live source rows unchanged",
+      "status": "pass",
+      "detail": "All 24 source/medium rows match the original same-period GA4 report."
+    },
+    {
+      "label": "Live report totals unchanged",
+      "status": "pass",
+      "detail": "10340 sessions, 118 recorded purchases and SAR58171.08."
+    },
+    {
+      "label": "sources purchase sum",
+      "status": "pass",
+      "detail": "118 recorded purchase events."
+    },
+    {
+      "label": "sources revenue sum",
+      "status": "pass",
+      "detail": "SAR58171.08."
+    },
+    {
+      "label": "channels purchase sum",
+      "status": "pass",
+      "detail": "118 recorded purchase events."
+    },
+    {
+      "label": "channels revenue sum",
+      "status": "pass",
+      "detail": "SAR58171.08."
+    },
+    {
+      "label": "monthly purchase sum",
+      "status": "pass",
+      "detail": "118 recorded purchase events."
+    },
+    {
+      "label": "monthly revenue sum",
+      "status": "pass",
+      "detail": "SAR58171.08."
+    },
+    {
+      "label": "ig / social",
+      "status": "pass",
+      "detail": "Verified against native GA4 source row; rate is the reported session purchase rate, not event-count/session division."
+    },
+    {
+      "label": "l.instagram.com / referral",
+      "status": "pass",
+      "detail": "Verified against native GA4 source row; rate is the reported session purchase rate, not event-count/session division."
+    },
+    {
+      "label": "snapchat / paid",
+      "status": "pass",
+      "detail": "Verified against native GA4 source row; rate is the reported session purchase rate, not event-count/session division."
+    },
+    {
+      "label": "tiktok / paid",
+      "status": "pass",
+      "detail": "Verified against native GA4 source row; rate is the reported session purchase rate, not event-count/session division."
+    },
+    {
+      "label": "google / organic",
+      "status": "pass",
+      "detail": "Verified against native GA4 source row; rate is the reported session purchase rate, not event-count/session division."
+    },
+    {
+      "label": "Combined Instagram recorded purchases",
+      "status": "pass",
+      "detail": "42 + 2 = 44; SAR22207.75 + SAR409.00 = SAR22616.75. No combined session conversion rate invented."
+    },
+    {
+      "label": "Product unit totals",
+      "status": "pass",
+      "detail": "228 item names, 270 units, SAR65130 item revenue. Units are not orders."
+    },
+    {
+      "label": "Funnel closed totals",
+      "status": "pass",
+      "detail": "Only Aug13-Oct11; sequential users, not 90-day purchases."
+    },
+    {
+      "label": "Funnel open totals",
+      "status": "pass",
+      "detail": "Open user counts; not treated as sequential drop-off percentages."
+    },
+    {
+      "label": "AOV calculation",
+      "status": "pass",
+      "detail": "SAR492.98 per recorded purchase."
+    },
+    {
+      "label": "Channel row session gap preserved",
+      "status": "pass",
+      "detail": "10340 report total minus 9894 row sum = 446; cause not established."
+    },
+    {
+      "label": "Source row session gap preserved",
+      "status": "pass",
+      "detail": "10340 report total minus 9859 row sum = 481; cause not established."
+    },
+    {
+      "label": "Attribution rounding",
+      "status": "pass",
+      "detail": "Displayed decimals sum to 118.01 and SAR58171.09; report totals stay 118 and SAR58171.08."
+    }
+  ],
+  "open_questions": [
+    {
+      "metric": "sessions",
+      "report_total": 10340,
+      "channel_row_sum": 9894,
+      "source_row_sum": 9859,
+      "status": "unexplained; preserve source numbers"
+    },
+    {
+      "metric": "item_vs_purchase_revenue",
+      "difference_sar": 6958.92,
+      "status": "needs discounts/value/refunds reconciliation with Salla"
+    },
+    {
+      "metric": "cost_per_order",
+      "status": "unavailable without actual same-period ad spend"
+    },
+    {
+      "metric": "current_sales",
+      "status": "GA4 stream inactive; current Salla sales not verified"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "provider": "Simple Icons",
+  "version": "v16",
+  "downloaded_at": "2026-10-12",
+  "source": "https://github.com/simple-icons/simple-icons",
+  "files": {
+    "instagram.svg": "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/instagram.svg",
+    "snapchat.svg": "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/snapchat.svg",
+    "tiktok.svg": "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/tiktok.svg",
+    "google.svg": "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/google.svg",
+    "facebook.svg": "https://cdn.jsdelivr.net/npm/simple-icons@v16/icons/facebook.svg"
+  }
+}

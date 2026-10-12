@@ -1,0 +1,12 @@
+.report-switch{display:flex;gap:5px;padding:5px;background:#efe5d6;border:1px solid #ded7c9;border-radius:13px;font-family:Cairo,Arial,sans-serif;font-size:13px;line-height:1.6}
+.report-switch a{display:flex;align-items:center;justify-content:center;min-height:44px;padding:9px 15px;border-radius:9px;text-decoration:none;color:#35351f;white-space:nowrap;font-weight:700}
+.report-switch a[aria-current=page]{background:#67622a;color:white;box-shadow:0 2px 5px #35351f15}
+.report-switch a:hover{background:#fffdf9;color:#35351f}.report-switch a[aria-current=page]:hover{background:#514e24;color:white}
+.report-switch a:focus-visible,.analytics-entry:focus-visible{outline:3px solid #713047;outline-offset:4px}
+aside>.report-switch,.sidebar>.report-switch{margin:10px 0 22px;flex-direction:column}
+.analytics-entry{display:flex;align-items:center;gap:22px;background:#67622a;color:#fffdf9;border-radius:18px;padding:22px 28px;text-decoration:none;margin-top:30px;box-shadow:0 5px 20px #35351f10}
+.analytics-entry:hover{color:white;background:#514e24}.analytics-entry>span:nth-child(2){display:grid;gap:4px}.analytics-entry strong{font-size:23px;line-height:1.6}.analytics-entry small{color:#eee5ce;font-size:12px}.analytics-entry>span>span{font-size:14px}.analytics-entry>b{margin-inline-start:auto;font-size:28px}.entry-icon{display:grid;place-items:center;color:#eaabbc;flex-shrink:0}
+@media(max-width:1100px){.topbar>.report-switch{font-size:12px}.topbar>.report-switch a{padding:8px 10px}}
+@media(max-width:650px){.topbar{flex-wrap:wrap}.topbar>.report-switch{order:3;width:100%;justify-content:center;margin-top:7px}.topbar>.report-switch a{flex:1;min-height:42px;font-size:13px}.analytics-entry{margin-top:20px;padding:20px 17px;gap:12px;align-items:flex-start}.analytics-entry strong{font-size:21px}.analytics-entry small{font-size:11px}.analytics-entry>span>span{font-size:13px}.entry-icon svg{width:38px;height:38px}.analytics-entry>b{font-size:23px}.layout main{padding-top:15px}html{scroll-padding-top:158px}}
+@media print{.report-switch,.analytics-entry{display:none!important}}
+@media(max-width:650px){body:has(.layout){--header:130px}body:has(.layout) .topbar{height:auto;min-height:130px}body:has(.layout) .layout main{padding-top:0}}

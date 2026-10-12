@@ -1,0 +1,25 @@
+﻿name,sessions,engaged,engagement,time,events_per_session,events,purchases,session_purchase_rate,revenue
+(direct) / (none),3493.0,1493.0,42.74,35s,7.78,27191.0,32.0,0.92,13874.73
+tiktok.com / referral,2493.0,704.0,28.24,12s,4.46,11112.0,1.0,0.04,412.5
+ig / social,1347.0,939.0,69.71,1m 34s,15.69,21134.0,42.0,3.04,22207.75
+snapchat / paid,1010.0,543.0,53.76,58s,11.33,11440.0,23.0,2.18,12322.5
+google / organic,593.0,390.0,65.77,1m 28s,13.43,7963.0,13.0,2.19,6528.0
+tiktok / paid,545.0,31.0,5.69,2s,3.38,1843.0,0.0,0.0,0.0
+(not set),144.0,0.0,0.0,58s,7.76,1118.0,0.0,0.0,0.0
+l.wl.co / referral,51.0,44.0,86.27,2m 06s,21.16,1079.0,4.0,7.84,1932.6
+lm.facebook.com / referral,47.0,18.0,38.3,4s,4.68,220.0,0.0,0.0,0.0
+bymahee.com / referral,36.0,34.0,94.44,40s,6.56,236.0,0.0,0.0,0.0
+chatgpt.com / ai-assistant,32.0,24.0,75.0,35s,6.41,205.0,0.0,0.0,0.0
+l.instagram.com / referral,29.0,22.0,75.86,52s,10.07,292.0,2.0,6.9,409.0
+pay.salla.sa / referral,9.0,4.0,44.44,14s,6.22,56.0,1.0,11.11,484.0
+facebook.com / referral,8.0,5.0,62.5,4s,4.25,34.0,0.0,0.0,0.0
+m.facebook.com / referral,6.0,0.0,0.0,0s,3.17,19.0,0.0,0.0,0.0
+snapchat.com / referral,6.0,3.0,50.0,17s,4.17,25.0,0.0,0.0,0.0
+google / cpc,3.0,0.0,0.0,0s,3.0,9.0,0.0,0.0,0.0
+ads.snapchat.com / referral,1.0,1.0,100.0,5s,4.0,4.0,0.0,0.0,0.0
+bylunad.com / referral,1.0,0.0,0.0,0s,3.0,3.0,0.0,0.0,0.0
+checkout.tamara.co / referral,1.0,1.0,100.0,1m 10s,18.0,18.0,0.0,0.0,0.0
+l.facebook.com / referral,1.0,0.0,0.0,7s,5.0,5.0,0.0,0.0,0.0
+portal.salla.partners / referral,1.0,0.0,0.0,0s,2.0,2.0,0.0,0.0,0.0
+snapchat / social,1.0,1.0,100.0,1m 28s,15.0,15.0,0.0,0.0,0.0
+tamara.lightning.force.com / referral,1.0,1.0,100.0,7s,4.0,4.0,0.0,0.0,0.0

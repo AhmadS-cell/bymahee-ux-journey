@@ -1,0 +1,9 @@
+﻿name,sessions,engaged,engagement,time,events_per_session,events,purchases,session_purchase_rate,revenue
+Organic Social,3972.0,1697.0,42.72,40s,8.27,32860.0,45.0,1.11,23029.25
+Direct,3493.0,1493.0,42.74,35s,7.78,27191.0,32.0,0.92,13874.73
+Paid Social,1557.0,574.0,36.87,38s,8.53,13283.0,23.0,1.41,12322.5
+Organic Search,593.0,390.0,65.77,1m 28s,13.43,7963.0,13.0,2.19,6528.0
+Unassigned,144.0,0.0,0.0,58s,7.76,1118.0,0.0,0.0,0.0
+Referral,100.0,84.0,84.0,1m 21s,13.98,1398.0,5.0,5.0,2416.6
+AI Assistant,32.0,24.0,75.0,35s,6.41,205.0,0.0,0.0,0.0
+Paid Search,3.0,0.0,0.0,0s,3.0,9.0,0.0,0.0,0.0

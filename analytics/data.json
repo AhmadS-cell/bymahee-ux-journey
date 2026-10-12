@@ -1,0 +1,3182 @@
+{
+  "metadata": {
+    "name": "bymahee",
+    "currency": "SAR",
+    "timezone": "Asia/Riyadh",
+    "captured_at": "2026-10-12",
+    "period_from": "2026-07-14",
+    "period_to": "2026-10-11",
+    "funnel_from": "2026-08-13",
+    "funnel_to": "2026-10-11",
+    "stream_status": "Data collection is not active; no data in past 48 hours",
+    "event_retention_months": 2,
+    "user_retention_months": 14,
+    "is_live_dashboard": false,
+    "ad_spend": null
+  },
+  "totals": {
+    "sessions": 10340,
+    "active_users": 8056,
+    "new_users": 7891,
+    "total_users": 8092,
+    "purchases": 118,
+    "purchasers": 114,
+    "purchase_revenue": 58171.08,
+    "session_purchase_rate": 1.12,
+    "engagement_rate": 42.12,
+    "items_purchased": 270,
+    "item_revenue": 65130,
+    "items_viewed": 28321,
+    "items_added": 1775,
+    "aov": 492.97525423728814
+  },
+  "channels": [
+    {
+      "name": "Organic Social",
+      "sessions": 3972.0,
+      "engaged": 1697.0,
+      "engagement": 42.72,
+      "time": "40s",
+      "events_per_session": 8.27,
+      "events": 32860.0,
+      "purchases": 45.0,
+      "session_purchase_rate": 1.11,
+      "revenue": 23029.25
+    },
+    {
+      "name": "Direct",
+      "sessions": 3493.0,
+      "engaged": 1493.0,
+      "engagement": 42.74,
+      "time": "35s",
+      "events_per_session": 7.78,
+      "events": 27191.0,
+      "purchases": 32.0,
+      "session_purchase_rate": 0.92,
+      "revenue": 13874.73
+    },
+    {
+      "name": "Paid Social",
+      "sessions": 1557.0,
+      "engaged": 574.0,
+      "engagement": 36.87,
+      "time": "38s",
+      "events_per_session": 8.53,
+      "events": 13283.0,
+      "purchases": 23.0,
+      "session_purchase_rate": 1.41,
+      "revenue": 12322.5
+    },
+    {
+      "name": "Organic Search",
+      "sessions": 593.0,
+      "engaged": 390.0,
+      "engagement": 65.77,
+      "time": "1m 28s",
+      "events_per_session": 13.43,
+      "events": 7963.0,
+      "purchases": 13.0,
+      "session_purchase_rate": 2.19,
+      "revenue": 6528.0
+    },
+    {
+      "name": "Unassigned",
+      "sessions": 144.0,
+      "engaged": 0.0,
+      "engagement": 0.0,
+      "time": "58s",
+      "events_per_session": 7.76,
+      "events": 1118.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Referral",
+      "sessions": 100.0,
+      "engaged": 84.0,
+      "engagement": 84.0,
+      "time": "1m 21s",
+      "events_per_session": 13.98,
+      "events": 1398.0,
+      "purchases": 5.0,
+      "session_purchase_rate": 5.0,
+      "revenue": 2416.6
+    },
+    {
+      "name": "AI Assistant",
+      "sessions": 32.0,
+      "engaged": 24.0,
+      "engagement": 75.0,
+      "time": "35s",
+      "events_per_session": 6.41,
+      "events": 205.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Paid Search",
+      "sessions": 3.0,
+      "engaged": 0.0,
+      "engagement": 0.0,
+      "time": "0s",
+      "events_per_session": 3.0,
+      "events": 9.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    }
+  ],
+  "sources": [
+    {
+      "name": "(direct) / (none)",
+      "sessions": 3493.0,
+      "engaged": 1493.0,
+      "engagement": 42.74,
+      "time": "35s",
+      "events_per_session": 7.78,
+      "events": 27191.0,
+      "purchases": 32.0,
+      "session_purchase_rate": 0.92,
+      "revenue": 13874.73
+    },
+    {
+      "name": "tiktok.com / referral",
+      "sessions": 2493.0,
+      "engaged": 704.0,
+      "engagement": 28.24,
+      "time": "12s",
+      "events_per_session": 4.46,
+      "events": 11112.0,
+      "purchases": 1.0,
+      "session_purchase_rate": 0.04,
+      "revenue": 412.5
+    },
+    {
+      "name": "ig / social",
+      "sessions": 1347.0,
+      "engaged": 939.0,
+      "engagement": 69.71,
+      "time": "1m 34s",
+      "events_per_session": 15.69,
+      "events": 21134.0,
+      "purchases": 42.0,
+      "session_purchase_rate": 3.04,
+      "revenue": 22207.75
+    },
+    {
+      "name": "snapchat / paid",
+      "sessions": 1010.0,
+      "engaged": 543.0,
+      "engagement": 53.76,
+      "time": "58s",
+      "events_per_session": 11.33,
+      "events": 11440.0,
+      "purchases": 23.0,
+      "session_purchase_rate": 2.18,
+      "revenue": 12322.5
+    },
+    {
+      "name": "google / organic",
+      "sessions": 593.0,
+      "engaged": 390.0,
+      "engagement": 65.77,
+      "time": "1m 28s",
+      "events_per_session": 13.43,
+      "events": 7963.0,
+      "purchases": 13.0,
+      "session_purchase_rate": 2.19,
+      "revenue": 6528.0
+    },
+    {
+      "name": "tiktok / paid",
+      "sessions": 545.0,
+      "engaged": 31.0,
+      "engagement": 5.69,
+      "time": "2s",
+      "events_per_session": 3.38,
+      "events": 1843.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "(not set)",
+      "sessions": 144.0,
+      "engaged": 0.0,
+      "engagement": 0.0,
+      "time": "58s",
+      "events_per_session": 7.76,
+      "events": 1118.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "l.wl.co / referral",
+      "sessions": 51.0,
+      "engaged": 44.0,
+      "engagement": 86.27,
+      "time": "2m 06s",
+      "events_per_session": 21.16,
+      "events": 1079.0,
+      "purchases": 4.0,
+      "session_purchase_rate": 7.84,
+      "revenue": 1932.6
+    },
+    {
+      "name": "lm.facebook.com / referral",
+      "sessions": 47.0,
+      "engaged": 18.0,
+      "engagement": 38.3,
+      "time": "4s",
+      "events_per_session": 4.68,
+      "events": 220.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "bymahee.com / referral",
+      "sessions": 36.0,
+      "engaged": 34.0,
+      "engagement": 94.44,
+      "time": "40s",
+      "events_per_session": 6.56,
+      "events": 236.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "chatgpt.com / ai-assistant",
+      "sessions": 32.0,
+      "engaged": 24.0,
+      "engagement": 75.0,
+      "time": "35s",
+      "events_per_session": 6.41,
+      "events": 205.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "l.instagram.com / referral",
+      "sessions": 29.0,
+      "engaged": 22.0,
+      "engagement": 75.86,
+      "time": "52s",
+      "events_per_session": 10.07,
+      "events": 292.0,
+      "purchases": 2.0,
+      "session_purchase_rate": 6.9,
+      "revenue": 409.0
+    },
+    {
+      "name": "pay.salla.sa / referral",
+      "sessions": 9.0,
+      "engaged": 4.0,
+      "engagement": 44.44,
+      "time": "14s",
+      "events_per_session": 6.22,
+      "events": 56.0,
+      "purchases": 1.0,
+      "session_purchase_rate": 11.11,
+      "revenue": 484.0
+    },
+    {
+      "name": "facebook.com / referral",
+      "sessions": 8.0,
+      "engaged": 5.0,
+      "engagement": 62.5,
+      "time": "4s",
+      "events_per_session": 4.25,
+      "events": 34.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "m.facebook.com / referral",
+      "sessions": 6.0,
+      "engaged": 0.0,
+      "engagement": 0.0,
+      "time": "0s",
+      "events_per_session": 3.17,
+      "events": 19.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "snapchat.com / referral",
+      "sessions": 6.0,
+      "engaged": 3.0,
+      "engagement": 50.0,
+      "time": "17s",
+      "events_per_session": 4.17,
+      "events": 25.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "google / cpc",
+      "sessions": 3.0,
+      "engaged": 0.0,
+      "engagement": 0.0,
+      "time": "0s",
+      "events_per_session": 3.0,
+      "events": 9.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "ads.snapchat.com / referral",
+      "sessions": 1.0,
+      "engaged": 1.0,
+      "engagement": 100.0,
+      "time": "5s",
+      "events_per_session": 4.0,
+      "events": 4.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "bylunad.com / referral",
+      "sessions": 1.0,
+      "engaged": 0.0,
+      "engagement": 0.0,
+      "time": "0s",
+      "events_per_session": 3.0,
+      "events": 3.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "checkout.tamara.co / referral",
+      "sessions": 1.0,
+      "engaged": 1.0,
+      "engagement": 100.0,
+      "time": "1m 10s",
+      "events_per_session": 18.0,
+      "events": 18.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "l.facebook.com / referral",
+      "sessions": 1.0,
+      "engaged": 0.0,
+      "engagement": 0.0,
+      "time": "7s",
+      "events_per_session": 5.0,
+      "events": 5.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "portal.salla.partners / referral",
+      "sessions": 1.0,
+      "engaged": 0.0,
+      "engagement": 0.0,
+      "time": "0s",
+      "events_per_session": 2.0,
+      "events": 2.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "snapchat / social",
+      "sessions": 1.0,
+      "engaged": 1.0,
+      "engagement": 100.0,
+      "time": "1m 28s",
+      "events_per_session": 15.0,
+      "events": 15.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "tamara.lightning.force.com / referral",
+      "sessions": 1.0,
+      "engaged": 1.0,
+      "engagement": 100.0,
+      "time": "7s",
+      "events_per_session": 4.0,
+      "events": 4.0,
+      "purchases": 0.0,
+      "session_purchase_rate": 0.0,
+      "revenue": 0.0
+    }
+  ],
+  "products": [
+    {
+      "name": "Tiger Lily Pajamas",
+      "views": 830.0,
+      "adds": 30.0,
+      "units": 5.0,
+      "revenue": 1200.0
+    },
+    {
+      "name": "Tiger Lily Large Tote",
+      "views": 607.0,
+      "adds": 39.0,
+      "units": 2.0,
+      "revenue": 590.0
+    },
+    {
+      "name": "Cherry Tote - Large",
+      "views": 520.0,
+      "adds": 28.0,
+      "units": 4.0,
+      "revenue": 1180.0
+    },
+    {
+      "name": "Olive Leopard Duffle",
+      "views": 517.0,
+      "adds": 16.0,
+      "units": 2.0,
+      "revenue": 690.0
+    },
+    {
+      "name": "Sunset Robe",
+      "views": 500.0,
+      "adds": 3.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Golden Leopard Robe",
+      "views": 483.0,
+      "adds": 22.0,
+      "units": 8.0,
+      "revenue": 1880.0
+    },
+    {
+      "name": "Congratulations Card",
+      "views": 481.0,
+      "adds": 3.0,
+      "units": 1.0,
+      "revenue": 10.0
+    },
+    {
+      "name": "Vintage Rose Tote - Small",
+      "views": 441.0,
+      "adds": 11.0,
+      "units": 1.0,
+      "revenue": 275.0
+    },
+    {
+      "name": "Flora Robe",
+      "views": 436.0,
+      "adds": 24.0,
+      "units": 6.0,
+      "revenue": 1128.0
+    },
+    {
+      "name": "Barbie Pouches set of 3",
+      "views": 430.0,
+      "adds": 20.0,
+      "units": 2.0,
+      "revenue": 420.0
+    },
+    {
+      "name": "Dusty Duffle",
+      "views": 419.0,
+      "adds": 11.0,
+      "units": 2.0,
+      "revenue": 690.0
+    },
+    {
+      "name": "Blue Lemons Large Tote Bag",
+      "views": 418.0,
+      "adds": 37.0,
+      "units": 5.0,
+      "revenue": 1475.0
+    },
+    {
+      "name": "Candy Strip Tote-Small",
+      "views": 412.0,
+      "adds": 8.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Capri Pajama with bag",
+      "views": 411.0,
+      "adds": 8.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Vintage Robe",
+      "views": 410.0,
+      "adds": 17.0,
+      "units": 3.0,
+      "revenue": 564.0
+    },
+    {
+      "name": "Golden Lavender Pouches set of 3",
+      "views": 403.0,
+      "adds": 17.0,
+      "units": 3.0,
+      "revenue": 900.0
+    },
+    {
+      "name": "Olive Leopard Pouches set of 3",
+      "views": 398.0,
+      "adds": 27.0,
+      "units": 6.0,
+      "revenue": 1290.0
+    },
+    {
+      "name": "Tiger Pajamas with Bag",
+      "views": 394.0,
+      "adds": 14.0,
+      "units": 1.0,
+      "revenue": 250.0
+    },
+    {
+      "name": "Dusty Hair Organizer Bag",
+      "views": 385.0,
+      "adds": 9.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Liliac Tote-Small",
+      "views": 375.0,
+      "adds": 16.0,
+      "units": 2.0,
+      "revenue": 460.0
+    },
+    {
+      "name": "Lobster Bay Duffle",
+      "views": 367.0,
+      "adds": 6.0,
+      "units": 1.0,
+      "revenue": 345.0
+    },
+    {
+      "name": "Barbie Duffle",
+      "views": 364.0,
+      "adds": 5.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Golden Lavender Duffle",
+      "views": 364.0,
+      "adds": 8.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pink Tiger Pajamas with Bag",
+      "views": 356.0,
+      "adds": 21.0,
+      "units": 2.0,
+      "revenue": 475.0
+    },
+    {
+      "name": "Ocean Tote - Large",
+      "views": 354.0,
+      "adds": 7.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Red Flora Robe",
+      "views": 344.0,
+      "adds": 12.0,
+      "units": 2.0,
+      "revenue": 376.0
+    },
+    {
+      "name": "Barbie Large Tote",
+      "views": 334.0,
+      "adds": 16.0,
+      "units": 1.0,
+      "revenue": 295.0
+    },
+    {
+      "name": "Olive Leopard Robe",
+      "views": 323.0,
+      "adds": 17.0,
+      "units": 6.0,
+      "revenue": 1410.0
+    },
+    {
+      "name": "Lobster Bay Pouches set of 3",
+      "views": 317.0,
+      "adds": 7.0,
+      "units": 2.0,
+      "revenue": 420.0
+    },
+    {
+      "name": "Orange Tiger Tote-Medium",
+      "views": 310.0,
+      "adds": 37.0,
+      "units": 3.0,
+      "revenue": 855.0
+    },
+    {
+      "name": "Dune Duffle",
+      "views": 309.0,
+      "adds": 13.0,
+      "units": 2.0,
+      "revenue": 520.0
+    },
+    {
+      "name": "Dusty Pouches set of 3",
+      "views": 303.0,
+      "adds": 19.0,
+      "units": 2.0,
+      "revenue": 390.0
+    },
+    {
+      "name": "Harbor Large Tote",
+      "views": 301.0,
+      "adds": 11.0,
+      "units": 2.0,
+      "revenue": 472.0
+    },
+    {
+      "name": "Liliac Pouches set of 3",
+      "views": 275.0,
+      "adds": 24.0,
+      "units": 4.0,
+      "revenue": 870.0
+    },
+    {
+      "name": "Blue Shell Duffle Bag",
+      "views": 274.0,
+      "adds": 4.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Black Clutch",
+      "views": 273.0,
+      "adds": 3.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pink Heart Pouches set of 3",
+      "views": 267.0,
+      "adds": 13.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pink Metallic Clutch",
+      "views": 267.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Birthday Card #1",
+      "views": 265.0,
+      "adds": 10.0,
+      "units": 4.0,
+      "revenue": 60.0
+    },
+    {
+      "name": "Ruby Garden Robe",
+      "views": 264.0,
+      "adds": 13.0,
+      "units": 5.0,
+      "revenue": 1175.0
+    },
+    {
+      "name": "Blue shell Tote Bag- Medium",
+      "views": 263.0,
+      "adds": 10.0,
+      "units": 1.0,
+      "revenue": 285.0
+    },
+    {
+      "name": "Lobster Hair Organizer Bag",
+      "views": 261.0,
+      "adds": 2.0,
+      "units": 1.0,
+      "revenue": 225.0
+    },
+    {
+      "name": "Heartbeat Pajamas with Bag",
+      "views": 252.0,
+      "adds": 11.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pastel Duffle",
+      "views": 240.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Lavender Duffle Bag",
+      "views": 239.0,
+      "adds": 8.0,
+      "units": 1.0,
+      "revenue": 345.0
+    },
+    {
+      "name": "Harbor Stripe Duffle",
+      "views": 223.0,
+      "adds": 9.0,
+      "units": 1.0,
+      "revenue": 345.0
+    },
+    {
+      "name": "Moonlit Pouches set of 3",
+      "views": 222.0,
+      "adds": 9.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Bee Robe",
+      "views": 214.0,
+      "adds": 21.0,
+      "units": 4.0,
+      "revenue": 729.0
+    },
+    {
+      "name": "Pink Flora Robe",
+      "views": 211.0,
+      "adds": 10.0,
+      "units": 3.0,
+      "revenue": 685.0
+    },
+    {
+      "name": "Candy Strip Pouches set of 3",
+      "views": 205.0,
+      "adds": 15.0,
+      "units": 2.0,
+      "revenue": 390.0
+    },
+    {
+      "name": "Wild Leopard Robe",
+      "views": 193.0,
+      "adds": 6.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Green Flora Robe",
+      "views": 190.0,
+      "adds": 7.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Blue Metallic Clutch",
+      "views": 189.0,
+      "adds": 2.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Midnight Bloom Duffel",
+      "views": 185.0,
+      "adds": 3.0,
+      "units": 1.0,
+      "revenue": 345.0
+    },
+    {
+      "name": "Seashells Tote -Large",
+      "views": 185.0,
+      "adds": 11.0,
+      "units": 1.0,
+      "revenue": 295.0
+    },
+    {
+      "name": "Pink Lemons Tote-Large",
+      "views": 181.0,
+      "adds": 10.0,
+      "units": 2.0,
+      "revenue": 590.0
+    },
+    {
+      "name": "Cotton Candy Medium Clutch",
+      "views": 171.0,
+      "adds": 2.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Orange Tiger Robe",
+      "views": 164.0,
+      "adds": 11.0,
+      "units": 3.0,
+      "revenue": 705.0
+    },
+    {
+      "name": "Cherry Duffle Bag",
+      "views": 162.0,
+      "adds": 9.0,
+      "units": 3.0,
+      "revenue": 1035.0
+    },
+    {
+      "name": "Olive Leopard Tote- Large",
+      "views": 161.0,
+      "adds": 12.0,
+      "units": 1.0,
+      "revenue": 295.0
+    },
+    {
+      "name": "Pink Lobster Tote- Large",
+      "views": 159.0,
+      "adds": 13.0,
+      "units": 1.0,
+      "revenue": 295.0
+    },
+    {
+      "name": "Capri Tote Bag- Large",
+      "views": 158.0,
+      "adds": 6.0,
+      "units": 3.0,
+      "revenue": 885.0
+    },
+    {
+      "name": "Lime Pajamas with Bag",
+      "views": 155.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Capri Duffle",
+      "views": 151.0,
+      "adds": 2.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Ocean Robe",
+      "views": 150.0,
+      "adds": 9.0,
+      "units": 2.0,
+      "revenue": 470.0
+    },
+    {
+      "name": "Pink Tiger Tote- Medium",
+      "views": 150.0,
+      "adds": 33.0,
+      "units": 2.0,
+      "revenue": 570.0
+    },
+    {
+      "name": "Golden Leopard Pouches set of 3",
+      "views": 146.0,
+      "adds": 4.0,
+      "units": 1.0,
+      "revenue": 225.0
+    },
+    {
+      "name": "Bronze Metallic Clutch- Medium",
+      "views": 142.0,
+      "adds": 8.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Oyster Pouches set of 3",
+      "views": 142.0,
+      "adds": 5.0,
+      "units": 1.0,
+      "revenue": 225.0
+    },
+    {
+      "name": "Blue Shell Pouches set of 3",
+      "views": 141.0,
+      "adds": 27.0,
+      "units": 2.0,
+      "revenue": 420.0
+    },
+    {
+      "name": "Blue Lemons Pouches set of 3",
+      "views": 139.0,
+      "adds": 47.0,
+      "units": 5.0,
+      "revenue": 1005.0
+    },
+    {
+      "name": "Cherry Pouches Set of 3",
+      "views": 138.0,
+      "adds": 48.0,
+      "units": 9.0,
+      "revenue": 1845.0
+    },
+    {
+      "name": "Harbor Strip pouches set of 3",
+      "views": 136.0,
+      "adds": 10.0,
+      "units": 4.0,
+      "revenue": 840.0
+    },
+    {
+      "name": "Heart Shoulder Bag",
+      "views": 134.0,
+      "adds": 2.0,
+      "units": 1.0,
+      "revenue": 155.0
+    },
+    {
+      "name": "Peach Blossom Robe",
+      "views": 129.0,
+      "adds": 5.0,
+      "units": 1.0,
+      "revenue": 235.0
+    },
+    {
+      "name": "Cherry Dark blue Tote Bag- Medium",
+      "views": 128.0,
+      "adds": 9.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Golden Hour Robe",
+      "views": 122.0,
+      "adds": 10.0,
+      "units": 2.0,
+      "revenue": 470.0
+    },
+    {
+      "name": "Cotton Candy Small Clutch",
+      "views": 121.0,
+      "adds": 3.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Lemon Large Tote Bag",
+      "views": 118.0,
+      "adds": 8.0,
+      "units": 1.0,
+      "revenue": 295.0
+    },
+    {
+      "name": "Lemons Pouches set of 3",
+      "views": 113.0,
+      "adds": 21.0,
+      "units": 3.0,
+      "revenue": 645.0
+    },
+    {
+      "name": "Lava Wave Clutch",
+      "views": 110.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Orange Tiger Duffle",
+      "views": 110.0,
+      "adds": 27.0,
+      "units": 1.0,
+      "revenue": 345.0
+    },
+    {
+      "name": "Rose Copper Metallic Clutch-Medium",
+      "views": 109.0,
+      "adds": 5.0,
+      "units": 1.0,
+      "revenue": 445.0
+    },
+    {
+      "name": "Flora Midi Dress",
+      "views": 108.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Sunset Stripe",
+      "views": 108.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Feather Large Tote bag",
+      "views": 103.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Palm Maxi Dress",
+      "views": 102.0,
+      "adds": 8.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Flora Medium Tote Bag",
+      "views": 100.0,
+      "adds": 13.0,
+      "units": 4.0,
+      "revenue": 1140.0
+    },
+    {
+      "name": "Cherry Tote Bag- Medium",
+      "views": 97.0,
+      "adds": 10.0,
+      "units": 2.0,
+      "revenue": 570.0
+    },
+    {
+      "name": "Golden Leopard Tote -Large",
+      "views": 97.0,
+      "adds": 4.0,
+      "units": 1.0,
+      "revenue": 295.0
+    },
+    {
+      "name": "Picnic Pouches set of 3",
+      "views": 97.0,
+      "adds": 17.0,
+      "units": 1.0,
+      "revenue": 180.0
+    },
+    {
+      "name": "Wild Blush Clutch",
+      "views": 94.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Capri Pouches set of 3",
+      "views": 92.0,
+      "adds": 17.0,
+      "units": 5.0,
+      "revenue": 1005.0
+    },
+    {
+      "name": "Pink Lobster Pouches set of 3",
+      "views": 92.0,
+      "adds": 20.0,
+      "units": 5.0,
+      "revenue": 1005.0
+    },
+    {
+      "name": "Blue Lemons Duffle Bag",
+      "views": 91.0,
+      "adds": 9.0,
+      "units": 2.0,
+      "revenue": 690.0
+    },
+    {
+      "name": "Lime Pouches Set of 3",
+      "views": 90.0,
+      "adds": 6.0,
+      "units": 2.0,
+      "revenue": 375.0
+    },
+    {
+      "name": "Purple Flora Robe",
+      "views": 89.0,
+      "adds": 6.0,
+      "units": 4.0,
+      "revenue": 940.0
+    },
+    {
+      "name": "Sunshine Tote - Medium",
+      "views": 89.0,
+      "adds": 9.0,
+      "units": 1.0,
+      "revenue": 285.0
+    },
+    {
+      "name": "Feather Pouches set of 3",
+      "views": 88.0,
+      "adds": 3.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Gardenia Robe",
+      "views": 86.0,
+      "adds": 7.0,
+      "units": 2.0,
+      "revenue": 470.0
+    },
+    {
+      "name": "Leopard Duffle Bag",
+      "views": 85.0,
+      "adds": 17.0,
+      "units": 1.0,
+      "revenue": 215.0
+    },
+    {
+      "name": "Cherry Duffle bag",
+      "views": 84.0,
+      "adds": 11.0,
+      "units": 2.0,
+      "revenue": 690.0
+    },
+    {
+      "name": "Lime Duffle",
+      "views": 84.0,
+      "adds": 4.0,
+      "units": 1.0,
+      "revenue": 260.0
+    },
+    {
+      "name": "Purple Metallic Clutch",
+      "views": 82.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Amalfi Blue Maxi Dress",
+      "views": 80.0,
+      "adds": 2.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Joy Waffle Cotton Bathrobe",
+      "views": 79.0,
+      "adds": 7.0,
+      "units": 1.0,
+      "revenue": 450.0
+    },
+    {
+      "name": "The Jungle Robe",
+      "views": 78.0,
+      "adds": 8.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Coco Wild Clutch",
+      "views": 73.0,
+      "adds": 3.0,
+      "units": 1.0,
+      "revenue": 180.0
+    },
+    {
+      "name": "Orange Tiger Tote-Large",
+      "views": 73.0,
+      "adds": 10.0,
+      "units": 3.0,
+      "revenue": 885.0
+    },
+    {
+      "name": "Pearl Clutch",
+      "views": 72.0,
+      "adds": 6.0,
+      "units": 1.0,
+      "revenue": 445.0
+    },
+    {
+      "name": "Lemon Tote Bag -Medium",
+      "views": 70.0,
+      "adds": 19.0,
+      "units": 2.0,
+      "revenue": 570.0
+    },
+    {
+      "name": "Picnic Tote Bag- Medium",
+      "views": 70.0,
+      "adds": 5.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pink Heart Duffle",
+      "views": 70.0,
+      "adds": 11.0,
+      "units": 1.0,
+      "revenue": 345.0
+    },
+    {
+      "name": "Blue Shell Large Tote Bag",
+      "views": 65.0,
+      "adds": 14.0,
+      "units": 1.0,
+      "revenue": 295.0
+    },
+    {
+      "name": "Oyster Tote Bag-Large",
+      "views": 65.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Lime Medium Tote Bag",
+      "views": 63.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Blooming Waffle Cotton Bathrobe",
+      "views": 61.0,
+      "adds": 6.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Flora Pouches Set of 3",
+      "views": 61.0,
+      "adds": 13.0,
+      "units": 2.0,
+      "revenue": 420.0
+    },
+    {
+      "name": "Bloom Maxi Dress",
+      "views": 60.0,
+      "adds": 3.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pink Lemons Pouches set of 3",
+      "views": 60.0,
+      "adds": 14.0,
+      "units": 2.0,
+      "revenue": 390.0
+    },
+    {
+      "name": "Tiger Lily Tote-Large II",
+      "views": 59.0,
+      "adds": 11.0,
+      "units": 1.0,
+      "revenue": 295.0
+    },
+    {
+      "name": "Pink Heart Tote- Medium",
+      "views": 58.0,
+      "adds": 11.0,
+      "units": 2.0,
+      "revenue": 570.0
+    },
+    {
+      "name": "Lemons Duffle Bag",
+      "views": 57.0,
+      "adds": 7.0,
+      "units": 1.0,
+      "revenue": 345.0
+    },
+    {
+      "name": "Lobster Duffle Bag",
+      "views": 57.0,
+      "adds": 17.0,
+      "units": 2.0,
+      "revenue": 690.0
+    },
+    {
+      "name": "Green Lemons Duffle Bag",
+      "views": 55.0,
+      "adds": 2.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Olive Large Tote",
+      "views": 54.0,
+      "adds": 9.0,
+      "units": 1.0,
+      "revenue": 295.0
+    },
+    {
+      "name": "Vintage Waffle Cotton Bathrobe",
+      "views": 52.0,
+      "adds": 5.0,
+      "units": 2.0,
+      "revenue": 900.0
+    },
+    {
+      "name": "Dolce Waffle Cotton Bathrobe",
+      "views": 51.0,
+      "adds": 2.0,
+      "units": 2.0,
+      "revenue": 900.0
+    },
+    {
+      "name": "Red Metallic Clutch- Small",
+      "views": 51.0,
+      "adds": 6.0,
+      "units": 1.0,
+      "revenue": 345.0
+    },
+    {
+      "name": "Lavender Maxi Dress",
+      "views": 50.0,
+      "adds": 3.0,
+      "units": 1.0,
+      "revenue": 350.0
+    },
+    {
+      "name": "Pink Lemons Tote Bag-Medium",
+      "views": 50.0,
+      "adds": 9.0,
+      "units": 1.0,
+      "revenue": 285.0
+    },
+    {
+      "name": "Pink Flora Waffle Cotton Bathrobe",
+      "views": 49.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Lobster Pouches set of 3",
+      "views": 48.0,
+      "adds": 25.0,
+      "units": 4.0,
+      "revenue": 840.0
+    },
+    {
+      "name": "Orange Tiger Set of 3",
+      "views": 48.0,
+      "adds": 6.0,
+      "units": 2.0,
+      "revenue": 450.0
+    },
+    {
+      "name": "Tiger Robe",
+      "views": 48.0,
+      "adds": 6.0,
+      "units": 2.0,
+      "revenue": 353.0
+    },
+    {
+      "name": "Lavender Vanity",
+      "views": 47.0,
+      "adds": 6.0,
+      "units": 2.0,
+      "revenue": 250.0
+    },
+    {
+      "name": "Lilac Waffle Cotton Bathrobe",
+      "views": 46.0,
+      "adds": 3.0,
+      "units": 2.0,
+      "revenue": 860.0
+    },
+    {
+      "name": "Bee 🐝 Medium Tote Bag",
+      "views": 44.0,
+      "adds": 5.0,
+      "units": 1.0,
+      "revenue": 285.0
+    },
+    {
+      "name": "Flora Riviera Large Duffle Bag",
+      "views": 43.0,
+      "adds": 8.0,
+      "units": 1.0,
+      "revenue": 266.0
+    },
+    {
+      "name": "Blue shell tote bag - Medium",
+      "views": 42.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pink Horizon Clutch",
+      "views": 42.0,
+      "adds": 2.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pink Tiger Lily Duffle",
+      "views": 42.0,
+      "adds": 12.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pink Tiger Robe",
+      "views": 42.0,
+      "adds": 17.0,
+      "units": 4.0,
+      "revenue": 940.0
+    },
+    {
+      "name": "Tiger Lily Robe",
+      "views": 42.0,
+      "adds": 12.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Lavender Tote-Large",
+      "views": 41.0,
+      "adds": 7.0,
+      "units": 3.0,
+      "revenue": 885.0
+    },
+    {
+      "name": "Green Lemons Large Tote Bag",
+      "views": 39.0,
+      "adds": 8.0,
+      "units": 2.0,
+      "revenue": 590.0
+    },
+    {
+      "name": "Pink Tiger Lily Robe",
+      "views": 39.0,
+      "adds": 18.0,
+      "units": 1.0,
+      "revenue": 235.0
+    },
+    {
+      "name": "Pink Tiger Tote - Large",
+      "views": 39.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "The Pink Panther Clutch",
+      "views": 39.0,
+      "adds": 2.0,
+      "units": 1.0,
+      "revenue": 180.0
+    },
+    {
+      "name": "London Style Bear Bag Charm",
+      "views": 37.0,
+      "adds": 4.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pink Tiger Lily Tote - Large",
+      "views": 37.0,
+      "adds": 16.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Heartbeat Pouches set of 3",
+      "views": 36.0,
+      "adds": 15.0,
+      "units": 1.0,
+      "revenue": 195.0
+    },
+    {
+      "name": "Olive Maxi Dress",
+      "views": 36.0,
+      "adds": 1.0,
+      "units": 1.0,
+      "revenue": 350.0
+    },
+    {
+      "name": "Blue Floral Duffle Bag",
+      "views": 32.0,
+      "adds": 5.0,
+      "units": 1.0,
+      "revenue": 255.0
+    },
+    {
+      "name": "Cannes Glow Clutch",
+      "views": 32.0,
+      "adds": 2.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Golden Hour Clutch",
+      "views": 32.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Palm Beaded Bag Charm",
+      "views": 30.0,
+      "adds": 6.0,
+      "units": 2.0,
+      "revenue": 130.0
+    },
+    {
+      "name": "Pink Tiger Pajamas",
+      "views": 30.0,
+      "adds": 6.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Green Lemons Pouches Set of 3",
+      "views": 29.0,
+      "adds": 6.0,
+      "units": 2.0,
+      "revenue": 390.0
+    },
+    {
+      "name": "Tiger Lily Pouches- Set of 3",
+      "views": 29.0,
+      "adds": 17.0,
+      "units": 3.0,
+      "revenue": 645.0
+    },
+    {
+      "name": "MAHEE Cherry Travel Set",
+      "views": 27.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Amber Maxi Dress",
+      "views": 26.0,
+      "adds": 2.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Lemons Robe",
+      "views": 25.0,
+      "adds": 8.0,
+      "units": 2.0,
+      "revenue": 188.0
+    },
+    {
+      "name": "Sunset Clutch",
+      "views": 25.0,
+      "adds": 2.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Cherry Tote Bag - Medium",
+      "views": 24.0,
+      "adds": 1.0,
+      "units": 1.0,
+      "revenue": 285.0
+    },
+    {
+      "name": "Yellow Tiger Tote -Large",
+      "views": 23.0,
+      "adds": 2.0,
+      "units": 1.0,
+      "revenue": 295.0
+    },
+    {
+      "name": "Gold Metallic Clutch-Medium",
+      "views": 22.0,
+      "adds": 3.0,
+      "units": 1.0,
+      "revenue": 445.0
+    },
+    {
+      "name": "Green Metallic Clutch",
+      "views": 22.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Sea Leopard Clutch",
+      "views": 22.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Gold Metallic Clutch - small",
+      "views": 21.0,
+      "adds": 2.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Lemon Tote Bag- Large",
+      "views": 20.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Leopard Pouches set of 3",
+      "views": 20.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pink Tiger Lily Pouches set of 3",
+      "views": 20.0,
+      "adds": 19.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Skywing Horse Charm",
+      "views": 20.0,
+      "adds": 5.0,
+      "units": 1.0,
+      "revenue": 50.0
+    },
+    {
+      "name": "Tropical Beach Cover up",
+      "views": 20.0,
+      "adds": 2.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pink Lobster Tote - Large",
+      "views": 19.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pink Tiger Duffle",
+      "views": 19.0,
+      "adds": 9.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Candy Shell Bag Charm",
+      "views": 18.0,
+      "adds": 4.0,
+      "units": 1.0,
+      "revenue": 65.0
+    },
+    {
+      "name": "Heartbeat Tote -Large",
+      "views": 18.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Saint-Tropez Clutch",
+      "views": 18.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Thomas Bear Bag Charm",
+      "views": 18.0,
+      "adds": 2.0,
+      "units": 1.0,
+      "revenue": 165.0
+    },
+    {
+      "name": "Midnight Beach Cover up",
+      "views": 17.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Sunlit Bloom Beach Cover Up",
+      "views": 17.0,
+      "adds": 2.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pink Butterfly Beaded Bag Charm",
+      "views": 16.0,
+      "adds": 2.0,
+      "units": 1.0,
+      "revenue": 65.0
+    },
+    {
+      "name": "Pink Lemons Duffle Bag",
+      "views": 16.0,
+      "adds": 5.0,
+      "units": 1.0,
+      "revenue": 345.0
+    },
+    {
+      "name": "Sun kissed Clutch",
+      "views": 16.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "pastel Floral Beach Cover up",
+      "views": 16.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Love Charm",
+      "views": 14.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pink Tiger Pouches Set of 3",
+      "views": 14.0,
+      "adds": 8.0,
+      "units": 2.0,
+      "revenue": 450.0
+    },
+    {
+      "name": "Pink Star Bag Charm",
+      "views": 13.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Blue Shell Bag Charm",
+      "views": 12.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Candy Shell Beaded Bag Charm",
+      "views": 12.0,
+      "adds": 2.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Gardenia",
+      "views": 12.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Greece Clutch",
+      "views": 12.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Moonlit Beach Cover up",
+      "views": 11.0,
+      "adds": 1.0,
+      "units": 1.0,
+      "revenue": 199.0
+    },
+    {
+      "name": "Blue Butterfly Charm",
+      "views": 10.0,
+      "adds": 2.0,
+      "units": 1.0,
+      "revenue": 65.0
+    },
+    {
+      "name": "Cherry Dark Blue Duffle bag",
+      "views": 10.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Orange Tiger Tote - Medium",
+      "views": 10.0,
+      "adds": 3.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Sea Whisper Bag Charm",
+      "views": 10.0,
+      "adds": 2.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Sahara Floral Beach Cover up",
+      "views": 9.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Shell Beaded Bag Charm",
+      "views": 9.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Lemon Beaded Bag Charm",
+      "views": 8.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Oyster Tote Bag - Large",
+      "views": 8.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Seashells Tote - Large",
+      "views": 8.0,
+      "adds": 1.0,
+      "units": 1.0,
+      "revenue": 295.0
+    },
+    {
+      "name": "The Jungle",
+      "views": 8.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Blush Shell Charm",
+      "views": 7.0,
+      "adds": 3.0,
+      "units": 1.0,
+      "revenue": 65.0
+    },
+    {
+      "name": "Capri Tote Bag - Large",
+      "views": 6.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Dune Beach Cover Up",
+      "views": 6.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Golden Hour Pouches set of 3",
+      "views": 6.0,
+      "adds": 1.0,
+      "units": 1.0,
+      "revenue": 195.0
+    },
+    {
+      "name": "Lemon Tote Bag - Large",
+      "views": 6.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Blue Flora Beach Cover up",
+      "views": 5.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Heartbeat Tote - Large",
+      "views": 5.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Golden Hour Tote- Medium",
+      "views": 4.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Midnight Beach Cover Up",
+      "views": 4.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pink Bow Beaded Bag Charm",
+      "views": 4.0,
+      "adds": 2.0,
+      "units": 1.0,
+      "revenue": 65.0
+    },
+    {
+      "name": "Bee Pouches set of 3",
+      "views": 3.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Blush Butterfly Bag Charm",
+      "views": 3.0,
+      "adds": 1.0,
+      "units": 1.0,
+      "revenue": 65.0
+    },
+    {
+      "name": "Fish Beach Cover up",
+      "views": 3.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Greece Clutch",
+      "views": 3.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Lemons Duffle Bag",
+      "views": 3.0,
+      "adds": 1.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Hibiscus Beaded Bag Charm",
+      "views": 2.0,
+      "adds": 2.0,
+      "units": 1.0,
+      "revenue": 65.0
+    },
+    {
+      "name": "Pink Heart Tote - Medium",
+      "views": 2.0,
+      "adds": 1.0,
+      "units": 1.0,
+      "revenue": 285.0
+    },
+    {
+      "name": "Pink Tiger Tote - Medium",
+      "views": 2.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Red Metallic Clutch - Small",
+      "views": 2.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Tiger Lily Pouches - Set of 3",
+      "views": 2.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Candy Strip Tote - Small",
+      "views": 1.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Lemon Tote Bag - Medium",
+      "views": 1.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Pink Lemons Tote Bag - Medium",
+      "views": 1.0,
+      "adds": 0.0,
+      "units": 0.0,
+      "revenue": 0.0
+    }
+  ],
+  "landing": [
+    {
+      "path": "/ar/شنط-قطنية/c1017943806",
+      "sessions": 4082.0,
+      "users": 3790.0,
+      "new_users": 3716.0,
+      "time": "18s",
+      "purchases": 6.0,
+      "revenue": 3010.0,
+      "session_purchase_rate": 0.12
+    },
+    {
+      "path": "/",
+      "sessions": 1032.0,
+      "users": 846.0,
+      "new_users": 803.0,
+      "time": "1m 39s",
+      "purchases": 30.0,
+      "revenue": 17123.1,
+      "session_purchase_rate": 2.91
+    },
+    {
+      "path": "/ar",
+      "sessions": 822.0,
+      "users": 664.0,
+      "new_users": 598.0,
+      "time": "1m 22s",
+      "purchases": 17.0,
+      "revenue": 7364.6,
+      "session_purchase_rate": 2.07
+    },
+    {
+      "path": "/ar/ملابس-يومية/c308893273",
+      "sessions": 736.0,
+      "users": 639.0,
+      "new_users": 542.0,
+      "time": "42s",
+      "purchases": 12.0,
+      "revenue": 5274.5,
+      "session_purchase_rate": 1.63
+    },
+    {
+      "path": "/ar/شنط/c541461361",
+      "sessions": 183.0,
+      "users": 130.0,
+      "new_users": 90.0,
+      "time": "1m 36s",
+      "purchases": 6.0,
+      "revenue": 4170.48,
+      "session_purchase_rate": 3.28
+    },
+    {
+      "path": "/ar/الارواب/c1223007139",
+      "sessions": 161.0,
+      "users": 85.0,
+      "new_users": 31.0,
+      "time": "28s",
+      "purchases": 2.0,
+      "revenue": 757.5,
+      "session_purchase_rate": 1.24
+    },
+    {
+      "path": "(not set)",
+      "sessions": 144.0,
+      "users": 116.0,
+      "new_users": 44.0,
+      "time": "0s",
+      "purchases": 0.0,
+      "revenue": 0.0,
+      "session_purchase_rate": 0.0
+    },
+    {
+      "path": "/ar/شنط-توت/c1895583291",
+      "sessions": 86.0,
+      "users": 68.0,
+      "new_users": 51.0,
+      "time": "2m 09s",
+      "purchases": 4.0,
+      "revenue": 1392.0,
+      "session_purchase_rate": 4.65
+    },
+    {
+      "path": "/ar/شنط-باوتش/c655830842",
+      "sessions": 70.0,
+      "users": 51.0,
+      "new_users": 39.0,
+      "time": "1m 17s",
+      "purchases": 3.0,
+      "revenue": 1247.5,
+      "session_purchase_rate": 4.29
+    },
+    {
+      "path": "/ar/شنط-الدافل/c1603289821",
+      "sessions": 67.0,
+      "users": 52.0,
+      "new_users": 35.0,
+      "time": "2m 04s",
+      "purchases": 1.0,
+      "revenue": 347.5,
+      "session_purchase_rate": 1.49
+    },
+    {
+      "path": "/ar/كلاتش/c232686653",
+      "sessions": 49.0,
+      "users": 29.0,
+      "new_users": 18.0,
+      "time": "1m 32s",
+      "purchases": 1.0,
+      "revenue": 474.75,
+      "session_purchase_rate": 2.04
+    },
+    {
+      "path": "/ar/cart",
+      "sessions": 45.0,
+      "users": 27.0,
+      "new_users": 3.0,
+      "time": "1m 07s",
+      "purchases": 3.0,
+      "revenue": 1311.75,
+      "session_purchase_rate": 6.67
+    },
+    {
+      "path": "/ar/pink-tiger-robe/p1055973080",
+      "sessions": 39.0,
+      "users": 30.0,
+      "new_users": 24.0,
+      "time": "32s",
+      "purchases": 2.0,
+      "revenue": 1012.75,
+      "session_purchase_rate": 5.13
+    },
+    {
+      "path": "/ar/الفساتين/c68686586",
+      "sessions": 25.0,
+      "users": 21.0,
+      "new_users": 8.0,
+      "time": "21s",
+      "purchases": 0.0,
+      "revenue": 0.0,
+      "session_purchase_rate": 0.0
+    },
+    {
+      "path": "/ar/orange-tiger-tote-medium/p1245728894",
+      "sessions": 24.0,
+      "users": 23.0,
+      "new_users": 20.0,
+      "time": "23s",
+      "purchases": 1.0,
+      "revenue": 309.0,
+      "session_purchase_rate": 4.17
+    },
+    {
+      "path": "/ar/أرواب-حمام/c99937326",
+      "sessions": 23.0,
+      "users": 21.0,
+      "new_users": 12.0,
+      "time": "1m 16s",
+      "purchases": 0.0,
+      "revenue": 0.0,
+      "session_purchase_rate": 0.0
+    },
+    {
+      "path": "/ar/tiger-lily-pouches-set-of-3/p914062229",
+      "sessions": 22.0,
+      "users": 17.0,
+      "new_users": 11.0,
+      "time": "1m 00s",
+      "purchases": 1.0,
+      "revenue": 219.0,
+      "session_purchase_rate": 4.55
+    },
+    {
+      "path": "/ar/orange-tiger-duffle/p1473064169",
+      "sessions": 21.0,
+      "users": 20.0,
+      "new_users": 13.0,
+      "time": "3m 55s",
+      "purchases": 0.0,
+      "revenue": 0.0,
+      "session_purchase_rate": 0.0
+    },
+    {
+      "path": "/ar/هدايا/c819598255",
+      "sessions": 21.0,
+      "users": 14.0,
+      "new_users": 7.0,
+      "time": "2m 56s",
+      "purchases": 1.0,
+      "revenue": 319.0,
+      "session_purchase_rate": 4.76
+    },
+    {
+      "path": "/ar/ml/p1055973080",
+      "sessions": 20.0,
+      "users": 10.0,
+      "new_users": 7.0,
+      "time": "3m 07s",
+      "purchases": 3.0,
+      "revenue": 1130.0,
+      "session_purchase_rate": 15.0
+    },
+    {
+      "path": "/ar/sunshine-tote-medium/p1691680104",
+      "sessions": 20.0,
+      "users": 20.0,
+      "new_users": 14.0,
+      "time": "1m 16s",
+      "purchases": 0.0,
+      "revenue": 0.0,
+      "session_purchase_rate": 0.0
+    },
+    {
+      "path": "/ar/البجايم/c1815508314",
+      "sessions": 20.0,
+      "users": 17.0,
+      "new_users": 7.0,
+      "time": "22s",
+      "purchases": 0.0,
+      "revenue": 0.0,
+      "session_purchase_rate": 0.0
+    },
+    {
+      "path": "/ar/tiger-lily-pajamas/p1954854880",
+      "sessions": 19.0,
+      "users": 15.0,
+      "new_users": 13.0,
+      "time": "1m 18s",
+      "purchases": 1.0,
+      "revenue": 920.0,
+      "session_purchase_rate": 5.26
+    },
+    {
+      "path": "/ar/bee-robe/p1100134920",
+      "sessions": 18.0,
+      "users": 8.0,
+      "new_users": 4.0,
+      "time": "20s",
+      "purchases": 1.0,
+      "revenue": 189.0,
+      "session_purchase_rate": 5.56
+    },
+    {
+      "path": "/ar/pink-tiger-tote-medium/p2016750321",
+      "sessions": 18.0,
+      "users": 17.0,
+      "new_users": 16.0,
+      "time": "1m 06s",
+      "purchases": 0.0,
+      "revenue": 0.0,
+      "session_purchase_rate": 0.0
+    }
+  ],
+  "cotton_sources": [
+    {
+      "path": "/ar/شنط-قطنية/c1017943806",
+      "source": "tiktok.com / referral",
+      "sessions": 2344.0,
+      "users": 2323.0,
+      "new_users": 2315.0,
+      "time": "13s",
+      "purchases": 1.0,
+      "revenue": 412.5,
+      "session_purchase_rate": 0.04
+    },
+    {
+      "path": "/ar/شنط-قطنية/c1017943806",
+      "source": "(direct) / (none)",
+      "sessions": 701.0,
+      "users": 627.0,
+      "new_users": 622.0,
+      "time": "32s",
+      "purchases": 0.0,
+      "revenue": 0.0,
+      "session_purchase_rate": 0.0
+    },
+    {
+      "path": "/ar/شنط-قطنية/c1017943806",
+      "source": "tiktok / paid",
+      "sessions": 508.0,
+      "users": 495.0,
+      "new_users": 489.0,
+      "time": "2s",
+      "purchases": 0.0,
+      "revenue": 0.0,
+      "session_purchase_rate": 0.0
+    },
+    {
+      "path": "/ar/شنط-قطنية/c1017943806",
+      "source": "snapchat / paid",
+      "sessions": 417.0,
+      "users": 339.0,
+      "new_users": 288.0,
+      "time": "44s",
+      "purchases": 5.0,
+      "revenue": 2597.5,
+      "session_purchase_rate": 0.96
+    },
+    {
+      "path": "/ar/شنط-قطنية/c1017943806",
+      "source": "(not set)",
+      "sessions": 10.0,
+      "users": 10.0,
+      "new_users": 0.0,
+      "time": "1m 38s",
+      "purchases": 0.0,
+      "revenue": 0.0,
+      "session_purchase_rate": 0.0
+    },
+    {
+      "path": "/ar/شنط-قطنية/c1017943806",
+      "source": "ig / social",
+      "sessions": 7.0,
+      "users": 5.0,
+      "new_users": 1.0,
+      "time": "4m 34s",
+      "purchases": 0.0,
+      "revenue": 0.0,
+      "session_purchase_rate": 0.0
+    },
+    {
+      "path": "/ar/شنط-قطنية/c1017943806",
+      "source": "google / organic",
+      "sessions": 4.0,
+      "users": 3.0,
+      "new_users": 0.0,
+      "time": "2m 21s",
+      "purchases": 0.0,
+      "revenue": 0.0,
+      "session_purchase_rate": 0.0
+    },
+    {
+      "path": "/ar/شنط-قطنية/c1017943806",
+      "source": "snapchat.com / referral",
+      "sessions": 1.0,
+      "users": 1.0,
+      "new_users": 1.0,
+      "time": "0s",
+      "purchases": 0.0,
+      "revenue": 0.0,
+      "session_purchase_rate": 0.0
+    },
+    {
+      "path": "/en/quilted-bags/c1017943806",
+      "source": "google / organic",
+      "sessions": 1.0,
+      "users": 1.0,
+      "new_users": 0.0,
+      "time": "46s",
+      "purchases": 0.0,
+      "revenue": 0.0,
+      "session_purchase_rate": 0.0
+    }
+  ],
+  "devices": [
+    {
+      "name": "mobile",
+      "users": 7715.0,
+      "new_users": 7539.0,
+      "engaged": 4097.0,
+      "engagement": 42.38,
+      "engaged_per_user": 0.53,
+      "time": "51s",
+      "events": 80140.0,
+      "purchases": 117.0,
+      "revenue": 57766.08
+    },
+    {
+      "name": "desktop",
+      "users": 187.0,
+      "new_users": 180.0,
+      "engaged": 223.0,
+      "engagement": 56.31,
+      "engaged_per_user": 1.19,
+      "time": "1m 46s",
+      "events": 3197.0,
+      "purchases": 1.0,
+      "revenue": 405.0
+    },
+    {
+      "name": "tablet",
+      "users": 173.0,
+      "new_users": 172.0,
+      "engaged": 28.0,
+      "engagement": 16.0,
+      "engaged_per_user": 0.16,
+      "time": "5s",
+      "events": 690.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    }
+  ],
+  "browsers": [
+    {
+      "name": "Safari",
+      "users": 6756.0,
+      "new_users": 6565.0,
+      "engaged": 3695.0,
+      "engagement": 43.53,
+      "engaged_per_user": 0.55,
+      "time": "54s",
+      "events": 72533.0,
+      "purchases": 112.0,
+      "revenue": 53647.18
+    },
+    {
+      "name": "Chrome",
+      "users": 1218.0,
+      "new_users": 1204.0,
+      "engaged": 502.0,
+      "engagement": 34.29,
+      "engaged_per_user": 0.41,
+      "time": "20s",
+      "events": 8208.0,
+      "purchases": 3.0,
+      "revenue": 3037.5
+    },
+    {
+      "name": "Android Webview",
+      "users": 51.0,
+      "new_users": 45.0,
+      "engaged": 45.0,
+      "engagement": 75.0,
+      "engaged_per_user": 0.88,
+      "time": "2m 42s",
+      "events": 1230.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Safari (in-app)",
+      "users": 40.0,
+      "new_users": 40.0,
+      "engaged": 31.0,
+      "engagement": 73.81,
+      "engaged_per_user": 0.78,
+      "time": "2m 33s",
+      "events": 998.0,
+      "purchases": 1.0,
+      "revenue": 226.5
+    },
+    {
+      "name": "Samsung Internet",
+      "users": 26.0,
+      "new_users": 25.0,
+      "engaged": 31.0,
+      "engagement": 50.0,
+      "engaged_per_user": 1.19,
+      "time": "3m 31s",
+      "events": 889.0,
+      "purchases": 2.0,
+      "revenue": 1259.9
+    },
+    {
+      "name": "Edge",
+      "users": 10.0,
+      "new_users": 9.0,
+      "engaged": 19.0,
+      "engagement": 76.0,
+      "engaged_per_user": 1.9,
+      "time": "1m 36s",
+      "events": 155.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "(not set)",
+      "users": 2.0,
+      "new_users": 2.0,
+      "engaged": 0.0,
+      "engagement": 0.0,
+      "engaged_per_user": 0.0,
+      "time": "0s",
+      "events": 6.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Firefox",
+      "users": 1.0,
+      "new_users": 1.0,
+      "engaged": 1.0,
+      "engagement": 50.0,
+      "engaged_per_user": 1.0,
+      "time": "38s",
+      "events": 8.0,
+      "purchases": 0.0,
+      "revenue": 0.0
+    }
+  ],
+  "countries": [
+    {
+      "name": "Saudi Arabia",
+      "users": 6119.0,
+      "new_users": 5937.0,
+      "engaged": 3525.0,
+      "engagement": 44.63,
+      "engaged_per_user": 0.58,
+      "time": "1m 03s",
+      "events": 71610.0,
+      "purchases": 116.0,
+      "user_purchase_rate": 1.83,
+      "revenue": 57534.08
+    },
+    {
+      "name": "United Arab Emirates",
+      "users": 1562.0,
+      "new_users": 1560.0,
+      "engaged": 520.0,
+      "engagement": 33.14,
+      "engaged_per_user": 0.33,
+      "time": "5s",
+      "events": 7659.0,
+      "purchases": 0.0,
+      "user_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "United States",
+      "users": 86.0,
+      "new_users": 84.0,
+      "engaged": 16.0,
+      "engagement": 17.39,
+      "engaged_per_user": 0.19,
+      "time": "18s",
+      "events": 433.0,
+      "purchases": 0.0,
+      "user_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Egypt",
+      "users": 82.0,
+      "new_users": 74.0,
+      "engaged": 173.0,
+      "engagement": 64.31,
+      "engaged_per_user": 2.11,
+      "time": "1m 48s",
+      "events": 1889.0,
+      "purchases": 1.0,
+      "user_purchase_rate": 1.22,
+      "revenue": 367.5
+    },
+    {
+      "name": "United Kingdom",
+      "users": 37.0,
+      "new_users": 37.0,
+      "engaged": 27.0,
+      "engagement": 61.36,
+      "engaged_per_user": 0.73,
+      "time": "53s",
+      "events": 309.0,
+      "purchases": 0.0,
+      "user_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "India",
+      "users": 21.0,
+      "new_users": 19.0,
+      "engaged": 8.0,
+      "engagement": 38.1,
+      "engaged_per_user": 0.38,
+      "time": "20s",
+      "events": 128.0,
+      "purchases": 0.0,
+      "user_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Qatar",
+      "users": 18.0,
+      "new_users": 18.0,
+      "engaged": 12.0,
+      "engagement": 66.67,
+      "engaged_per_user": 0.67,
+      "time": "55s",
+      "events": 190.0,
+      "purchases": 1.0,
+      "user_purchase_rate": 5.56,
+      "revenue": 269.5
+    },
+    {
+      "name": "France",
+      "users": 17.0,
+      "new_users": 15.0,
+      "engaged": 8.0,
+      "engagement": 42.11,
+      "engaged_per_user": 0.47,
+      "time": "19s",
+      "events": 112.0,
+      "purchases": 0.0,
+      "user_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Kuwait",
+      "users": 17.0,
+      "new_users": 17.0,
+      "engaged": 15.0,
+      "engagement": 75.0,
+      "engaged_per_user": 0.88,
+      "time": "2m 15s",
+      "events": 320.0,
+      "purchases": 0.0,
+      "user_purchase_rate": 0.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "Spain",
+      "users": 13.0,
+      "new_users": 10.0,
+      "engaged": 15.0,
+      "engagement": 55.56,
+      "engaged_per_user": 1.15,
+      "time": "1m 15s",
+      "events": 235.0,
+      "purchases": 0.0,
+      "user_purchase_rate": 0.0,
+      "revenue": 0.0
+    }
+  ],
+  "attribution": [
+    {
+      "name": "Organic Social",
+      "purchases": 42.71,
+      "ads_cost": 0.0,
+      "cost_per_event": 0.0,
+      "impressions": 0.0,
+      "clicks": 0.0,
+      "cpc": 0.0,
+      "revenue": 21298.71,
+      "roas": 0.0
+    },
+    {
+      "name": "Direct",
+      "purchases": 25.0,
+      "ads_cost": 0.0,
+      "cost_per_event": 0.0,
+      "impressions": 0.0,
+      "clicks": 0.0,
+      "cpc": 0.0,
+      "revenue": 10518.73,
+      "roas": 0.0
+    },
+    {
+      "name": "Paid Social",
+      "purchases": 22.25,
+      "ads_cost": 0.0,
+      "cost_per_event": 0.0,
+      "impressions": 0.0,
+      "clicks": 0.0,
+      "cpc": 0.0,
+      "revenue": 11442.26,
+      "roas": 0.0
+    },
+    {
+      "name": "Referral",
+      "purchases": 16.92,
+      "ads_cost": 0.0,
+      "cost_per_event": 0.0,
+      "impressions": 0.0,
+      "clicks": 0.0,
+      "cpc": 0.0,
+      "revenue": 9153.7,
+      "roas": 0.0
+    },
+    {
+      "name": "Organic Search",
+      "purchases": 11.13,
+      "ads_cost": 0.0,
+      "cost_per_event": 0.0,
+      "impressions": 0.0,
+      "clicks": 0.0,
+      "cpc": 0.0,
+      "revenue": 5757.69,
+      "roas": 0.0
+    }
+  ],
+  "attribution_sources": [
+    {
+      "name": "ig",
+      "purchases": 39.71,
+      "ads_cost": 0.0,
+      "cost_per_event": 0.0,
+      "impressions": 0.0,
+      "clicks": 0.0,
+      "cpc": 0.0,
+      "revenue": 20477.21,
+      "roas": 0.0
+    },
+    {
+      "name": "(direct)",
+      "purchases": 25.0,
+      "ads_cost": 0.0,
+      "cost_per_event": 0.0,
+      "impressions": 0.0,
+      "clicks": 0.0,
+      "cpc": 0.0,
+      "revenue": 10518.73,
+      "roas": 0.0
+    },
+    {
+      "name": "snapchat",
+      "purchases": 22.25,
+      "ads_cost": 0.0,
+      "cost_per_event": 0.0,
+      "impressions": 0.0,
+      "clicks": 0.0,
+      "cpc": 0.0,
+      "revenue": 11442.26,
+      "roas": 0.0
+    },
+    {
+      "name": "pay.salla.sa",
+      "purchases": 12.19,
+      "ads_cost": 0.0,
+      "cost_per_event": 0.0,
+      "impressions": 0.0,
+      "clicks": 0.0,
+      "cpc": 0.0,
+      "revenue": 7022.47,
+      "roas": 0.0
+    },
+    {
+      "name": "google",
+      "purchases": 11.13,
+      "ads_cost": 0.0,
+      "cost_per_event": 0.0,
+      "impressions": 0.0,
+      "clicks": 0.0,
+      "cpc": 0.0,
+      "revenue": 5757.69,
+      "roas": 0.0
+    },
+    {
+      "name": "l.wl.co",
+      "purchases": 3.01,
+      "ads_cost": 0.0,
+      "cost_per_event": 0.0,
+      "impressions": 0.0,
+      "clicks": 0.0,
+      "cpc": 0.0,
+      "revenue": 1281.97,
+      "roas": 0.0
+    },
+    {
+      "name": "l.instagram.com",
+      "purchases": 2.0,
+      "ads_cost": 0.0,
+      "cost_per_event": 0.0,
+      "impressions": 0.0,
+      "clicks": 0.0,
+      "cpc": 0.0,
+      "revenue": 409.0,
+      "roas": 0.0
+    },
+    {
+      "name": "checkout.tamara.co",
+      "purchases": 1.72,
+      "ads_cost": 0.0,
+      "cost_per_event": 0.0,
+      "impressions": 0.0,
+      "clicks": 0.0,
+      "cpc": 0.0,
+      "revenue": 849.26,
+      "roas": 0.0
+    },
+    {
+      "name": "tiktok.com",
+      "purchases": 1.0,
+      "ads_cost": 0.0,
+      "cost_per_event": 0.0,
+      "impressions": 0.0,
+      "clicks": 0.0,
+      "cpc": 0.0,
+      "revenue": 412.5,
+      "roas": 0.0
+    }
+  ],
+  "events": [
+    {
+      "name": "page_view",
+      "events": 28675.0,
+      "users": 8058.0,
+      "events_per_user": 3.57,
+      "revenue": 0.0
+    },
+    {
+      "name": "user_engagement",
+      "events": 19030.0,
+      "users": 2556.0,
+      "events_per_user": 7.46,
+      "revenue": 0.0
+    },
+    {
+      "name": "session_start",
+      "events": 9721.0,
+      "users": 7978.0,
+      "events_per_user": 1.22,
+      "revenue": 0.0
+    },
+    {
+      "name": "view_item",
+      "events": 9079.0,
+      "users": 3106.0,
+      "events_per_user": 2.92,
+      "revenue": 0.0
+    },
+    {
+      "name": "first_visit",
+      "events": 7891.0,
+      "users": 7831.0,
+      "events_per_user": 1.01,
+      "revenue": 0.0
+    },
+    {
+      "name": "scroll",
+      "events": 6034.0,
+      "users": 3433.0,
+      "events_per_user": 1.76,
+      "revenue": 0.0
+    },
+    {
+      "name": "add_to_cart",
+      "events": 1798.0,
+      "users": 497.0,
+      "events_per_user": 3.62,
+      "revenue": 0.0
+    },
+    {
+      "name": "view_cart",
+      "events": 598.0,
+      "users": 226.0,
+      "events_per_user": 2.65,
+      "revenue": 0.0
+    },
+    {
+      "name": "begin_checkout",
+      "events": 343.0,
+      "users": 140.0,
+      "events_per_user": 2.45,
+      "revenue": 0.0
+    },
+    {
+      "name": "form_start",
+      "events": 331.0,
+      "users": 194.0,
+      "events_per_user": 1.71,
+      "revenue": 0.0
+    },
+    {
+      "name": "click",
+      "events": 276.0,
+      "users": 178.0,
+      "events_per_user": 1.55,
+      "revenue": 0.0
+    },
+    {
+      "name": "view_search_results",
+      "events": 130.0,
+      "users": 43.0,
+      "events_per_user": 3.02,
+      "revenue": 0.0
+    },
+    {
+      "name": "purchase",
+      "events": 118.0,
+      "users": 114.0,
+      "events_per_user": 1.04,
+      "revenue": 58171.08
+    },
+    {
+      "name": "form_submit",
+      "events": 3.0,
+      "users": 3.0,
+      "events_per_user": 1.0,
+      "revenue": 0.0
+    }
+  ],
+  "funnel_closed": {
+    "steps": [
+      1787,
+      870,
+      118,
+      14,
+      8
+    ],
+    "device_rows": [
+      [
+        "1",
+        "mobile",
+        "1,664 (93.12%)",
+        "843 (96.9%)",
+        "116 (98.31%)",
+        "13 (92.86%)",
+        "8 (100%)"
+      ],
+      [
+        "2",
+        "desktop",
+        "87 (4.87%)",
+        "17 (1.95%)",
+        "2 (1.69%)",
+        "1 (7.14%)",
+        "0 (0%)"
+      ],
+      [
+        "3",
+        "tablet",
+        "36 (2.01%)",
+        "10 (1.15%)",
+        "0 (0%)",
+        "0 (0%)",
+        "0 (0%)"
+      ]
+    ],
+    "basis": "Sequential user count; closed funnel; Aug 13–Oct 11, 2026; 100% available data"
+  },
+  "funnel_open": {
+    "steps": [
+      1785,
+      874,
+      118,
+      14,
+      10
+    ],
+    "device_rows": [
+      [
+        "1",
+        "mobile",
+        "1,662 (93.11%)",
+        "847 (96.91%)",
+        "116 (98.31%)",
+        "13 (92.86%)",
+        "10 (100%)"
+      ],
+      [
+        "2",
+        "desktop",
+        "87 (4.87%)",
+        "17 (1.95%)",
+        "2 (1.69%)",
+        "1 (7.14%)",
+        "0 (0%)"
+      ],
+      [
+        "3",
+        "tablet",
+        "36 (2.02%)",
+        "10 (1.14%)",
+        "0 (0%)",
+        "0 (0%)",
+        "0 (0%)"
+      ]
+    ],
+    "basis": "Open funnel user counts; same dates"
+  },
+  "checkout_closed": {
+    "steps": [
+      18,
+      0,
+      0,
+      0
+    ]
+  },
+  "checkout_open": {
+    "steps": [
+      18,
+      0,
+      0,
+      20
+    ]
+  },
+  "funnel_period_events": [
+    {
+      "name": "page_view",
+      "events": 7100.0,
+      "users": 1806.0,
+      "events_per_user": 3.98,
+      "revenue": 0.0
+    },
+    {
+      "name": "user_engagement",
+      "events": 5031.0,
+      "users": 662.0,
+      "events_per_user": 7.63,
+      "revenue": 0.0
+    },
+    {
+      "name": "view_item",
+      "events": 2368.0,
+      "users": 874.0,
+      "events_per_user": 2.71,
+      "revenue": 0.0
+    },
+    {
+      "name": "session_start",
+      "events": 2212.0,
+      "users": 1808.0,
+      "events_per_user": 1.24,
+      "revenue": 0.0
+    },
+    {
+      "name": "first_visit",
+      "events": 1713.0,
+      "users": 1709.0,
+      "events_per_user": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "scroll",
+      "events": 1504.0,
+      "users": 883.0,
+      "events_per_user": 1.71,
+      "revenue": 0.0
+    },
+    {
+      "name": "add_to_cart",
+      "events": 574.0,
+      "users": 144.0,
+      "events_per_user": 3.99,
+      "revenue": 0.0
+    },
+    {
+      "name": "view_cart",
+      "events": 173.0,
+      "users": 68.0,
+      "events_per_user": 2.54,
+      "revenue": 0.0
+    },
+    {
+      "name": "form_start",
+      "events": 92.0,
+      "users": 61.0,
+      "events_per_user": 1.51,
+      "revenue": 0.0
+    },
+    {
+      "name": "click",
+      "events": 66.0,
+      "users": 48.0,
+      "events_per_user": 1.38,
+      "revenue": 0.0
+    },
+    {
+      "name": "view_search_results",
+      "events": 48.0,
+      "users": 19.0,
+      "events_per_user": 2.53,
+      "revenue": 0.0
+    },
+    {
+      "name": "begin_checkout",
+      "events": 44.0,
+      "users": 18.0,
+      "events_per_user": 2.44,
+      "revenue": 0.0
+    },
+    {
+      "name": "purchase",
+      "events": 30.0,
+      "users": 29.0,
+      "events_per_user": 1.03,
+      "revenue": 15733.0
+    }
+  ],
+  "monthly": [
+    {
+      "label": "14–31 يوليو",
+      "days": 18,
+      "purchases": 64.0,
+      "revenue": 29590.08,
+      "session_start_events": 5698.0
+    },
+    {
+      "label": "أغسطس",
+      "days": 31,
+      "purchases": 47.0,
+      "revenue": 25462.5,
+      "session_start_events": 3606.0
+    },
+    {
+      "label": "سبتمبر",
+      "days": 30,
+      "purchases": 7.0,
+      "revenue": 3118.5,
+      "session_start_events": 417.0
+    },
+    {
+      "label": "1–11 أكتوبر",
+      "days": 11,
+      "purchases": 0,
+      "revenue": 0,
+      "session_start_events": 0
+    }
+  ],
+  "last30_events": [
+    {
+      "name": "page_view",
+      "events": 5.0,
+      "users": 2.0,
+      "events_per_user": 2.5,
+      "revenue": 0.0
+    },
+    {
+      "name": "session_start",
+      "events": 3.0,
+      "users": 2.0,
+      "events_per_user": 1.5,
+      "revenue": 0.0
+    },
+    {
+      "name": "first_visit",
+      "events": 2.0,
+      "users": 2.0,
+      "events_per_user": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "purchase",
+      "events": 2.0,
+      "users": 2.0,
+      "events_per_user": 1.0,
+      "revenue": 921.5
+    },
+    {
+      "name": "scroll",
+      "events": 2.0,
+      "users": 2.0,
+      "events_per_user": 1.0,
+      "revenue": 0.0
+    },
+    {
+      "name": "user_engagement",
+      "events": 2.0,
+      "users": 2.0,
+      "events_per_user": 1.0,
+      "revenue": 0.0
+    }
+  ],
+  "sources_manifest": [],
+  "reconciliations": {
+    "product_row_units": 270.0,
+    "product_row_revenue": 65130.0,
+    "item_vs_purchase_revenue_gap": 6958.919999999998,
+    "channel_row_sessions": 9894.0,
+    "source_row_sessions": 9859.0,
+    "device_row_users": 8075.0,
+    "attribution_row_purchase_credit": 118.01,
+    "attribution_row_revenue": 58171.09
+  },
+  "review": {
+    "reviewed_at": "2026-10-12",
+    "basis": "Saved original GA4 DOM tables; numeric reconciliation and interface review",
+    "instagram_purchase_sources": {
+      "ig / social": 42,
+      "l.instagram.com / referral": 2
+    },
+    "instagram_purchases_combined": 44,
+    "instagram_revenue_combined": 22616.75,
+    "session_total_note": "Grand total is 10340. Channel rows sum to 9894; source/medium rows sum to 9859. Unexplained differences preserved; no invented rows or adjusted totals.",
+    "rounding_note": "Displayed attributed purchase credit sums to 118.01 and revenue to 58171.09 due to rounding; report total is 118 and 58171.08."
+  }
+}
