@@ -201,6 +201,16 @@
       "label": "Product catalog matching",
       "status": "pass",
       "detail": "180 / 228 analytics names have current catalog matches using item IDs; 48 unresolved. Three shared names have multiple IDs and are shown as groups."
+    },
+    {
+      "label": "Animated channel flow coverage",
+      "status": "pass",
+      "detail": "Every one of 24 source rows assigned to exactly one of six groups; 9859 row sessions, 118 purchases and SAR58171.08. Native total remains 10340, unresolved gap 481."
+    },
+    {
+      "label": "Animation semantics",
+      "status": "pass",
+      "detail": "Path widths, traveler counts and movement speeds are illustrative; no matched journey, unique-person count or untracked-source allocation inferred."
     }
   ],
   "open_questions": [

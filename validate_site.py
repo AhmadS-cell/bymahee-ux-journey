@@ -103,6 +103,19 @@ assert len(product_csv)==228
 for r in product_csv:
     if float(r['units']):assert abs(float(r['average_sold_unit_revenue'])-float(r['revenue'])/float(r['units']))<=.0051
     else:assert not r['average_sold_unit_revenue']
+flow=json.loads((root/'analytics/channel-motion.json').read_text(encoding='utf-8'))
+assert flow==data['channel_motion']
+assert flow['period_from']==data['metadata']['period_from'] and flow['period_to']==data['metadata']['period_to']
+keys=[key for g in flow['groups'] for key in g['source_names']]
+assert len(keys)==len(set(keys))==24 and set(keys)==set(r['name'] for r in data['sources'])
+for g in flow['groups']:
+    rr=[r for r in data['sources'] if r['name'] in g['source_names']]
+    for key in ['sessions','purchases','revenue']:assert abs(g[key]-sum(r[key] for r in rr))<.01
+assert sum(g['sessions'] for g in flow['groups'])==9859
+assert sum(g['purchases'] for g in flow['groups'])==118
+assert abs(sum(g['revenue'] for g in flow['groups'])-58171.08)<.01
+assert flow['native_sessions']==10340 and flow['unreconciled_session_gap']==481
+assert not any(flow[k] for k in ['matched_journey','line_width_proportional','particle_count_proportional'])
 html=(root/'analytics/index.html').read_text(encoding='utf-8')
 embedded=re.search(r'<script id="report-data" type="application/json">(.*?)</script>',html,re.S)
 assert json.loads(embedded[1])==data
