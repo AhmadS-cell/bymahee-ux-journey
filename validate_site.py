@@ -128,6 +128,16 @@ for g in entries['groups']:
     assert original['sessions']==g['native_acquisition_sessions'] and original['source_names']==g['source_names']
 assert next(g for g in entries['groups'] if g['key']=='instagram')['entry_sessions']=={'home':1167,'collection':85,'product':89,'other':15,'unknown':18}
 assert next(g for g in entries['groups'] if g['key']=='direct')['rows_captured']==543
+search_proof=json.loads((root/'analytics/cotton-search-evidence.json').read_text(encoding='utf-8'))
+cotton_ar=[r for r in data['cotton_sources'] if r['path'].startswith('/ar/')]
+assert search_proof['arabic_google_organic_sessions']==sum(r['sessions'] for r in cotton_ar if r['source']=='google / organic')==4
+assert search_proof['arabic_tiktok_sessions']==sum(r['sessions'] for r in cotton_ar if r['source'] in ['tiktok.com / referral','tiktok / paid'])==2852
+assert search_proof['arabic_collection_source_rows_sessions']==sum(r['sessions'] for r in cotton_ar)==3992
+assert search_proof['unreconciled_source_sessions']==4082-3992==90
+assert search_proof['observed_organic_web_result_position']==7 and search_proof['position_is_snapshot_only']
+assert not search_proof['first_position_verified'] and not search_proof['majority_google_organic_verified']
+assert not search_proof['query_to_historical_sessions_verified']
+assert (root/'analytics'/search_proof['screenshot']).is_file()
 html=(root/'analytics/index.html').read_text(encoding='utf-8')
 embedded=re.search(r'<script id="report-data" type="application/json">(.*?)</script>',html,re.S)
 assert json.loads(embedded[1])==data
