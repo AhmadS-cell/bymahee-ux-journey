@@ -1,0 +1,399 @@
+{
+  "reviewed_on": "2026-10-13",
+  "periods": [
+    "2026-07-14 to 2026-10-11",
+    "2026-08-13 to 2026-10-11"
+  ],
+  "channel_period_checks": [
+    {
+      "mode": "reach_90",
+      "channel": "instagram",
+      "landings": [
+        1167,
+        85,
+        89,
+        33
+      ],
+      "stages": [
+        497,
+        140,
+        114
+      ],
+      "pass": true
+    },
+    {
+      "mode": "reach_90",
+      "channel": "snapchat",
+      "landings": [
+        55,
+        892,
+        40,
+        22
+      ],
+      "stages": [
+        497,
+        140,
+        114
+      ],
+      "pass": true
+    },
+    {
+      "mode": "reach_90",
+      "channel": "google",
+      "landings": [
+        268,
+        101,
+        150,
+        74
+      ],
+      "stages": [
+        497,
+        140,
+        114
+      ],
+      "pass": true
+    },
+    {
+      "mode": "reach_90",
+      "channel": "tiktok",
+      "landings": [
+        7,
+        3010,
+        29,
+        11
+      ],
+      "stages": [
+        497,
+        140,
+        114
+      ],
+      "pass": true
+    },
+    {
+      "mode": "reach_90",
+      "channel": "direct",
+      "landings": [
+        274,
+        1319,
+        1748,
+        141
+      ],
+      "stages": [
+        497,
+        140,
+        114
+      ],
+      "pass": true
+    },
+    {
+      "mode": "reach_90",
+      "channel": "other",
+      "landings": [
+        96,
+        138,
+        62,
+        53
+      ],
+      "stages": [
+        497,
+        140,
+        114
+      ],
+      "pass": true
+    },
+    {
+      "mode": "closed",
+      "channel": "instagram",
+      "landings": [
+        320,
+        16,
+        32,
+        8
+      ],
+      "stages": [
+        118,
+        14,
+        8
+      ],
+      "pass": true
+    },
+    {
+      "mode": "closed",
+      "channel": "snapchat",
+      "landings": [
+        51,
+        316,
+        15,
+        7
+      ],
+      "stages": [
+        118,
+        14,
+        8
+      ],
+      "pass": true
+    },
+    {
+      "mode": "closed",
+      "channel": "google",
+      "landings": [
+        77,
+        36,
+        36,
+        32
+      ],
+      "stages": [
+        118,
+        14,
+        8
+      ],
+      "pass": true
+    },
+    {
+      "mode": "closed",
+      "channel": "tiktok",
+      "landings": [
+        4,
+        267,
+        6,
+        4
+      ],
+      "stages": [
+        118,
+        14,
+        8
+      ],
+      "pass": true
+    },
+    {
+      "mode": "closed",
+      "channel": "direct",
+      "landings": [
+        88,
+        260,
+        491,
+        51
+      ],
+      "stages": [
+        118,
+        14,
+        8
+      ],
+      "pass": true
+    },
+    {
+      "mode": "closed",
+      "channel": "other",
+      "landings": [
+        29,
+        9,
+        18,
+        45
+      ],
+      "stages": [
+        118,
+        14,
+        8
+      ],
+      "pass": true
+    },
+    {
+      "mode": "reach_90",
+      "channel": "instagram",
+      "landings": [
+        1167,
+        85,
+        89,
+        33
+      ],
+      "stages": [
+        497,
+        140,
+        114
+      ],
+      "pass": true
+    },
+    {
+      "mode": "reach_90",
+      "channel": "snapchat",
+      "landings": [
+        55,
+        892,
+        40,
+        22
+      ],
+      "stages": [
+        497,
+        140,
+        114
+      ],
+      "pass": true
+    },
+    {
+      "mode": "reach_90",
+      "channel": "google",
+      "landings": [
+        268,
+        101,
+        150,
+        74
+      ],
+      "stages": [
+        497,
+        140,
+        114
+      ],
+      "pass": true
+    },
+    {
+      "mode": "reach_90",
+      "channel": "tiktok",
+      "landings": [
+        7,
+        3010,
+        29,
+        11
+      ],
+      "stages": [
+        497,
+        140,
+        114
+      ],
+      "pass": true
+    },
+    {
+      "mode": "reach_90",
+      "channel": "direct",
+      "landings": [
+        274,
+        1319,
+        1748,
+        141
+      ],
+      "stages": [
+        497,
+        140,
+        114
+      ],
+      "pass": true
+    },
+    {
+      "mode": "reach_90",
+      "channel": "other",
+      "landings": [
+        96,
+        138,
+        62,
+        53
+      ],
+      "stages": [
+        497,
+        140,
+        114
+      ],
+      "pass": true
+    }
+  ],
+  "responsive_checks": [
+    {
+      "canvasOverflow": false,
+      "invalidPaths": 0,
+      "overflow": false,
+      "period": "90",
+      "selected": "instagram",
+      "width": 1280,
+      "mode": "reach_90",
+      "pass": true
+    },
+    {
+      "canvasOverflow": false,
+      "invalidPaths": 0,
+      "overflow": false,
+      "period": "60",
+      "selected": "instagram",
+      "width": 1280,
+      "mode": "closed",
+      "pass": true
+    },
+    {
+      "canvasOverflow": false,
+      "invalidPaths": 0,
+      "overflow": false,
+      "period": "90",
+      "selected": "instagram",
+      "width": 1024,
+      "mode": "reach_90",
+      "pass": true
+    },
+    {
+      "canvasOverflow": false,
+      "invalidPaths": 0,
+      "overflow": false,
+      "period": "60",
+      "selected": "instagram",
+      "width": 1024,
+      "mode": "closed",
+      "pass": true
+    },
+    {
+      "canvasOverflow": false,
+      "invalidPaths": 0,
+      "overflow": false,
+      "period": "90",
+      "selected": "instagram",
+      "width": 375,
+      "mode": "reach_90",
+      "pass": true
+    },
+    {
+      "canvasOverflow": false,
+      "invalidPaths": 0,
+      "overflow": false,
+      "period": "60",
+      "selected": "instagram",
+      "width": 375,
+      "mode": "closed",
+      "pass": true
+    },
+    {
+      "canvasOverflow": false,
+      "invalidPaths": 0,
+      "overflow": false,
+      "period": "90",
+      "selected": "instagram",
+      "width": 320,
+      "mode": "reach_90",
+      "pass": true
+    },
+    {
+      "canvasOverflow": false,
+      "invalidPaths": 0,
+      "overflow": false,
+      "period": "60",
+      "selected": "instagram",
+      "width": 320,
+      "mode": "closed",
+      "pass": true
+    }
+  ],
+  "controls": {
+    "pause_persists_after_period_change": true,
+    "replay_resumes": true,
+    "selected_channel_persists_after_period_change": true,
+    "clear_channel_restores_all": true,
+    "old_open_deep_link_maps_to_closed": true,
+    "only_two_options": true,
+    "rate_shortcut_changes_full_map": true,
+    "closed_rates_verified": [
+      "13.56%",
+      "11.86%",
+      "57.14%"
+    ],
+    "no_console_errors": true
+  },
+  "data_limitations": {
+    "landing_to_cart_animation_is_illustrative": true,
+    "channel_to_purchase_join_verified": false,
+    "closed_funnel_is_subset_of_period_purchases": true
+  }
+}

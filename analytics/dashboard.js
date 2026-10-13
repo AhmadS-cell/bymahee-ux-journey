@@ -41,19 +41,19 @@ $('landing-body').innerHTML=D.landing.map(r=>`<tr><td><bdi>${esc(r.path)}</bdi><
 const cotton=D.cotton_sources.filter(r=>r.path.startsWith('/ar/')&&(r.sessions>=100||r.source==='google / organic')).sort((a,b)=>b.sessions-a.sessions);
 $('cotton-bars').innerHTML=cotton.map(r=>`<div class="cotton-source"><div class="cotton-row-head">${sourceIdentity(r.source,true)}<strong>${n(fmt(r.sessions))} زيارة</strong></div><div class="bar-track"><div class="bar-fill" style="width:${100*r.sessions/2344}%" aria-hidden="true"></div></div><small>${fmt(r.purchases)} شراء مسجّل · ${fmt(r.session_purchase_rate,2)}% زيارات اشترت · ${timeArabic(r.time)} تفاعل</small></div>`).join('');
 function funnel(){
-  const mode=$('funnel-mode').value,reach=mode==='reach_90',open=mode==='open';
+  const reach=$('funnel-mode').value==='reach_90';
+  if(!reach)$('funnel-mode').value='closed';
   const keys=['session_start','view_item','add_to_cart','begin_checkout','purchase'];
-  const steps=reach?keys.map(key=>D.events.find(row=>row.name===key).users):D[open?'funnel_open':'funnel_closed'].steps;
-  const labels=reach?['بدأوا جلسة','شاهدوا منتجًا','أضافوا للسلة','بدأوا إتمام الطلب','سجّلوا شراءً']:['بدء جلسة','مشاهدة منتج','إضافة للسلة','بدء إتمام الطلب','الشراء'];
+  const steps=reach?keys.map(key=>D.events.find(row=>row.name===key).users):D.funnel_closed.steps;
+  const labels=['بدء جلسة','مشاهدة منتج','إضافة للسلة','بدء إتمام الطلب','الشراء'];
   $('funnel-view-title').textContent='القناة ← صفحة الدخول ← السلة ← إتمام الطلب ← الشراء';
-  $('funnel-view-description').textContent='صفحات البداية حسب القناة؛ أرقام السلة والشراء تخص المتجر كله. الربط بينهما ما زال ناقصًا.';
-  $('funnel-period-badge').textContent=reach?'14 يوليو–11 أكتوبر 2026 · 90 يومًا':'13 أغسطس–11 أكتوبر 2026 · 60 يومًا فقط';
-  $('funnel-graphic-title').textContent=reach?'كل الفترة · أحجام مسجّلة، انتقال غير موثّق':open?'عدادات الفانل المفتوح':'الفانل المتسلسل · جزء من الفترة';
-  $('funnel-graphic-caption').textContent=reach?'صفحات الدخول تعدّ جلسات، والسلة والدفع والشراء تعدّ مستخدمين بأحداث مستقلة. لا نعرف نسبة انتقالهم من كل صفحة للسلة. الخطوط المتقطّعة احتمالات، وليست تسربًا أو انتقالًا مقاسًا.':open?'صفحات الدخول للـ90 يومًا، والفانل المفتوح لـ60 يومًا؛ يمكن الدخول من أي خطوة، لذلك لا نقسم عداداته لنسبة تحويل.':'صفحات الدخول للـ90 يومًا. نسب الشراء تخص التسلسل المغلق لـ60 يومًا فقط: السلة 118 ÷ 870 ممن شاهدوا المنتج = 13.56%؛ ثم 14 ÷ 118 = 11.86%؛ ثم 8 ÷ 14 = 57.14%. ليست نسبًا من صفحات البداية، ولا تخص قناة بعينها.';
-  $('funnel-chart').hidden=true;
-  $('funnel-chart').innerHTML='';
-  if(typeof renderFunnelVisual==='function')renderFunnelVisual(steps,labels,open,reach);
-  $('funnel-note').textContent=reach?'الصورة الكاملة: 10,340 جلسة، 8,092 إجمالي مستخدمين، و118 عملية شراء سجّلها 114 مستخدمًا. ظهر حدث بدء جلسة لدى 7,978 مستخدمًا؛ هذا عدّ حدث مستقل، وليس إجمالي مستخدمي المتجر. لا نحسب نسب تسرب بقسمة عدادات هذه الصفوف.':open?'هذا عدّ الفانل المفتوح لفترة الـ60 يومًا فقط. يصل إلى 10 مستخدمين للشراء؛ تقرير الأحداث للفترة نفسها سجّل 30 عملية شراء لدى 29 مستخدمًا. لا نعطي نسب تسرب بقسمة عدادات الفانل المفتوح.':'هذا الفانل لفترة الـ60 يومًا فقط. يبدأ بـ1,787 مستخدمًا ويصل إلى 8 اشتروا بعد التسلسل؛ تقرير الأحداث للفترة نفسها سجّل 30 عملية شراء لدى 29 مستخدمًا. اكتمال هذا التسلسل 0.45%، وليس معدل تحويل المتجر كله.';
+  $('funnel-view-description').textContent='اختيار الفترة يحدّث القنوات وصفحات الدخول والمراحل والإجمالي في هذه الخريطة. باقي التقرير يعرض الـ90 يومًا.';
+  $('funnel-period-badge').textContent=reach?'14 يوليو–11 أكتوبر 2026 · 90 يومًا':'13 أغسطس–11 أكتوبر 2026 · 60 يومًا';
+  $('funnel-graphic-title').textContent=reach?'90 يومًا · أحجام مسجّلة، انتقال غير موثّق':'60 يومًا · نسب تسلسل المستخدمين';
+  $('funnel-graphic-caption').textContent=reach?'صفحات الدخول تعدّ جلسات؛ السلة وإتمام الطلب والشراء تعدّ مستخدمين بأحداث مستقلة. الدوائر على الخطوط المتقطّعة توضيحية، وليست انتقالًا مقاسًا.':'كل القنوات وصفحات الدخول والإجمالي هنا للـ60 يومًا نفسها. نسب البطاقات تخص تسلسل المستخدمين لكل القنوات: 118 من 870 شاهدوا المنتج = 13.56%؛ ثم 14 من 118 = 11.86%؛ ثم 8 من 14 = 57.14%. لا تخص صفحة دخول أو قناة بعينها.';
+  $('funnel-chart').hidden=true;$('funnel-chart').innerHTML='';
+  if(typeof renderFunnelVisual==='function')renderFunnelVisual(steps,labels,false,reach);
+  $('funnel-note').textContent=reach?'إجمالي الفترة: 10,340 جلسة و118 عملية شراء لدى 114 مستخدمًا. عدادات المراحل مستقلة؛ لا نستخرج تسربًا بقسمتها.':'إجمالي الفترة: 2,221 جلسة و30 عملية شراء مسجّلة. الفانل المتسلسل يبدأ بـ1,787 مستخدمًا ويصل إلى 8 بعد التسلسل؛ هؤلاء جزء من 29 مستخدمًا سجّلوا شراءً في تقرير الأحداث. اكتمال التسلسل 0.45%، وليس تحويل المتجر كله. صفحة البداية للقناة ليست مطابقة لهذا التسلسل.';
 }
 $('funnel-total-sessions').textContent=fmt(T.sessions);
 $('funnel-total-users').textContent=fmt(T.total_users);

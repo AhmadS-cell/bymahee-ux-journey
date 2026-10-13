@@ -13566,5 +13566,180 @@
       "buttons_executed": false,
       "successful_add_verified": false
     }
+  },
+  "channel_entry_routes_60": {
+    "period_from": "2026-08-13",
+    "period_to": "2026-10-11",
+    "captured_on": "2026-10-13",
+    "groups": [
+      {
+        "key": "instagram",
+        "name": "إنستجرام",
+        "brand": "instagram",
+        "color": "#bb3978",
+        "source_names": [
+          "ig / social",
+          "l.instagram.com / referral"
+        ],
+        "native_landing_sessions": 377.0,
+        "entry_sessions": {
+          "home": 320.0,
+          "collection": 16.0,
+          "product": 32.0,
+          "other": 4.0,
+          "unknown": 4.0
+        },
+        "mapped_rows_sessions": 376.0,
+        "native_total_minus_rows": 1.0,
+        "purchases": 6.0,
+        "revenue": 2988.0,
+        "rows_captured": 28
+      },
+      {
+        "key": "snapchat",
+        "name": "سناب المدفوع",
+        "brand": "snapchat",
+        "color": "#9a7800",
+        "source_names": [
+          "snapchat / paid"
+        ],
+        "native_landing_sessions": 390.0,
+        "entry_sessions": {
+          "home": 51.0,
+          "collection": 316.0,
+          "product": 15.0,
+          "other": 2.0,
+          "unknown": 5.0
+        },
+        "mapped_rows_sessions": 389.0,
+        "native_total_minus_rows": 1.0,
+        "purchases": 8.0,
+        "revenue": 5222.0,
+        "rows_captured": 26
+      },
+      {
+        "key": "google",
+        "name": "بحث Google",
+        "brand": "google",
+        "color": "#4285f4",
+        "source_names": [
+          "google / organic"
+        ],
+        "native_landing_sessions": 181.0,
+        "entry_sessions": {
+          "home": 77.0,
+          "collection": 36.0,
+          "product": 36.0,
+          "other": 17.0,
+          "unknown": 15.0
+        },
+        "mapped_rows_sessions": 181.0,
+        "native_total_minus_rows": 0.0,
+        "purchases": 2.0,
+        "revenue": 757.5,
+        "rows_captured": 42
+      },
+      {
+        "key": "tiktok",
+        "name": "تيك توك",
+        "brand": "tiktok",
+        "color": "#273443",
+        "source_names": [
+          "tiktok.com / referral",
+          "tiktok / paid"
+        ],
+        "native_landing_sessions": 280.0,
+        "entry_sessions": {
+          "home": 4.0,
+          "collection": 267.0,
+          "product": 6.0,
+          "other": 0,
+          "unknown": 4.0
+        },
+        "mapped_rows_sessions": 281.0,
+        "native_total_minus_rows": -1.0,
+        "purchases": 1.0,
+        "revenue": 412.5,
+        "rows_captured": 10
+      },
+      {
+        "key": "direct",
+        "name": "وصول مباشر",
+        "brand": null,
+        "color": "#807970",
+        "source_names": [
+          "(direct) / (none)"
+        ],
+        "native_landing_sessions": 892.0,
+        "entry_sessions": {
+          "home": 88.0,
+          "collection": 260.0,
+          "product": 491.0,
+          "other": 36.0,
+          "unknown": 15.0
+        },
+        "mapped_rows_sessions": 890.0,
+        "native_total_minus_rows": 2.0,
+        "purchases": 11.0,
+        "revenue": 5211.5,
+        "rows_captured": 314
+      },
+      {
+        "key": "other",
+        "name": "مصادر أخرى",
+        "brand": null,
+        "color": "#957b65",
+        "source_names": [
+          "(not set)",
+          "l.wl.co / referral",
+          "lm.facebook.com / referral",
+          "bymahee.com / referral",
+          "chatgpt.com / ai-assistant",
+          "pay.salla.sa / referral",
+          "facebook.com / referral",
+          "m.facebook.com / referral",
+          "snapchat.com / referral",
+          "google / cpc",
+          "ads.snapchat.com / referral",
+          "bylunad.com / referral",
+          "checkout.tamara.co / referral",
+          "l.facebook.com / referral",
+          "portal.salla.partners / referral",
+          "snapchat / social",
+          "tamara.lightning.force.com / referral"
+        ],
+        "native_landing_sessions": 101.0,
+        "entry_sessions": {
+          "home": 29.0,
+          "collection": 9.0,
+          "product": 18.0,
+          "other": 43.0,
+          "unknown": 2.0
+        },
+        "mapped_rows_sessions": 101.0,
+        "native_total_minus_rows": 0.0,
+        "purchases": 2.0,
+        "revenue": 1141.5,
+        "rows_captured": 63
+      }
+    ],
+    "totals": {
+      "sessions": 2221.0,
+      "purchases": 30.0,
+      "purchase_revenue": 15733.0,
+      "aov": 524.4333333333333
+    },
+    "entry_types": [
+      "home",
+      "collection",
+      "product",
+      "other",
+      "unknown"
+    ],
+    "all_group_rows_captured": true,
+    "landing_to_cart_join_verified": false,
+    "source_to_purchase_journey_join_verified": false,
+    "method": "Same GA4 Landing page report and same six mutually exclusive Session source / medium filters as the 90-day capture. All rows extracted. Key-event totals agree with the existing purchase-event total (30) for the same period. Private landing paths only used for classification and not published. Native totals retained separately from row sums.",
+    "purchase_summary_scope": "All recorded purchases for the period, separate from eight users completing the closed funnel."
   }
 }

@@ -241,6 +241,31 @@
       "label": "Entry-page rows complete: other",
       "status": "pass",
       "detail": "Read all 114 rows for the fixed 90-day period; preserved native report total and row sums without forcing reconciliation."
+    },
+    {
+      "label": "60-day entry reports complete",
+      "status": "pass",
+      "detail": "All rows extracted: Instagram 28, Snapchat 26, Google 42, TikTok 10, Direct 314, Other 63."
+    },
+    {
+      "label": "Same-period flow totals",
+      "status": "pass",
+      "detail": "60-day channel totals equal 2221 sessions, 30 purchase events and SAR15733; average purchase value SAR524.43. Closed-sequence purchasers remain a separate subset."
+    },
+    {
+      "label": "Period and channel UI matrix",
+      "status": "pass",
+      "detail": "18 real browser channel/period checks passed, including return from 60 days to 90 days."
+    },
+    {
+      "label": "Responsive flow and controls",
+      "status": "pass",
+      "detail": "8 real browser checks passed at widths 1280, 1024, 375 and 320 across both periods. Pause, replay, selection persistence, clear, rates shortcut and legacy open links checked."
+    },
+    {
+      "label": "Motion evidence semantics",
+      "status": "pass",
+      "detail": "Outlined dots on dashed landing-to-cart links are illustrative; no measured channel-to-purchase journey is claimed."
     }
   ],
   "open_questions": [
@@ -266,5 +291,6 @@
     }
   ],
   "review_basis": "Reopened native GA4 source/medium, events, closed and open purchase journey reports on 2026-10-12. All 24 source rows and 14 event rows matched. Other aggregate tables reconciled with the original capture. Reopened BigQuery links, data stream, Google tag overview and retention settings; recorded observed configuration and unverified settings separately. Read-only all-user and purchase-event-only technology and city reports reviewed for the same 90-day window.",
-  "entry_routes_reviewed_at": "2026-10-13"
+  "entry_routes_reviewed_at": "2026-10-13",
+  "flow_period_reviewed_at": "2026-10-13"
 }

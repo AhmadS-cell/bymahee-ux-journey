@@ -128,6 +128,21 @@ for g in entries['groups']:
     assert original['sessions']==g['native_acquisition_sessions'] and original['source_names']==g['source_names']
 assert next(g for g in entries['groups'] if g['key']=='instagram')['entry_sessions']=={'home':1167,'collection':85,'product':89,'other':15,'unknown':18}
 assert next(g for g in entries['groups'] if g['key']=='direct')['rows_captured']==543
+entries60=json.loads((root/'analytics/channel-entry-routes-60.json').read_text(encoding='utf-8'))
+assert entries60==data['channel_entry_routes_60']
+assert entries60['period_from']==data['metadata']['funnel_from'] and entries60['period_to']==data['metadata']['funnel_to']
+assert entries60['all_group_rows_captured'] and not entries60['landing_to_cart_join_verified']
+assert not entries60['source_to_purchase_journey_join_verified']
+assert sum(g['native_landing_sessions'] for g in entries60['groups'])==entries60['totals']['sessions']==2221
+assert sum(g['purchases'] for g in entries60['groups'])==entries60['totals']['purchases']==30
+assert abs(sum(g['revenue'] for g in entries60['groups'])-entries60['totals']['purchase_revenue'])<.01
+assert entries60['totals']['purchase_revenue']==next(r for r in data['funnel_period_events'] if r['name']=='purchase')['revenue']
+assert abs(entries60['totals']['aov']-15733/30)<.000001
+for g in entries60['groups']:
+    assert sum(g['entry_sessions'].values())==g['mapped_rows_sessions']
+    assert g['native_landing_sessions']-g['mapped_rows_sessions']==g['native_total_minus_rows']
+assert next(g for g in entries60['groups'] if g['key']=='instagram')['entry_sessions']=={'home':320,'collection':16,'product':32,'other':4,'unknown':4}
+assert next(g for g in entries60['groups'] if g['key']=='direct')['rows_captured']==314
 search_proof=json.loads((root/'analytics/cotton-search-evidence.json').read_text(encoding='utf-8'))
 cotton_ar=[r for r in data['cotton_sources'] if r['path'].startswith('/ar/')]
 assert search_proof['arabic_google_organic_sessions']==sum(r['sessions'] for r in cotton_ar if r['source']=='google / organic')==4
