@@ -45,7 +45,7 @@ function funnel(){
   const keys=['session_start','view_item','add_to_cart','begin_checkout','purchase'];
   const steps=reach?keys.map(key=>D.events.find(row=>row.name===key).users):D[open?'funnel_open':'funnel_closed'].steps;
   const labels=reach?['بدأوا جلسة','شاهدوا منتجًا','أضافوا للسلة','بدأوا إتمام الطلب','سجّلوا شراءً']:['بدء جلسة','مشاهدة منتج','إضافة للسلة','بدء إتمام الطلب','الشراء'];
-  $('funnel-view-title').textContent='الزيارة ← المنتج ← السلة ← إتمام الطلب ← الشراء';
+  $('funnel-view-title').textContent='بدء زيارة ← المنتج ← السلة ← إتمام الطلب ← الشراء';
   $('funnel-view-description').textContent=reach?'مصادر الزيارات وأحجام المراحل للـ90 يومًا؛ انتقال الأشخاص بينها غير موثّق.':'القنوات تعرض 90 يومًا، والمراحل تعرض 60 يومًا فقط؛ ربط القناة بكل مرحلة غير متاح.';
   $('funnel-period-badge').textContent=reach?'14 يوليو–11 أكتوبر 2026 · 90 يومًا':'13 أغسطس–11 أكتوبر 2026 · 60 يومًا فقط';
   $('funnel-graphic-title').textContent=reach?'كل الفترة · أحجام مسجّلة، انتقال غير موثّق':open?'عدادات الفانل المفتوح':'الفانل المتسلسل · جزء من الفترة';
