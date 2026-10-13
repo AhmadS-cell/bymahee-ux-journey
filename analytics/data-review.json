@@ -211,6 +211,36 @@
       "label": "Animation semantics",
       "status": "pass",
       "detail": "Path widths, traveler counts and movement speeds are illustrative; no matched journey, unique-person count or untracked-source allocation inferred."
+    },
+    {
+      "label": "Entry-page rows complete: instagram",
+      "status": "pass",
+      "detail": "Read all 69 rows for the fixed 90-day period; preserved native report total and row sums without forcing reconciliation."
+    },
+    {
+      "label": "Entry-page rows complete: snapchat",
+      "status": "pass",
+      "detail": "Read all 52 rows for the fixed 90-day period; preserved native report total and row sums without forcing reconciliation."
+    },
+    {
+      "label": "Entry-page rows complete: google",
+      "status": "pass",
+      "detail": "Read all 118 rows for the fixed 90-day period; preserved native report total and row sums without forcing reconciliation."
+    },
+    {
+      "label": "Entry-page rows complete: tiktok",
+      "status": "pass",
+      "detail": "Read all 18 rows for the fixed 90-day period; preserved native report total and row sums without forcing reconciliation."
+    },
+    {
+      "label": "Entry-page rows complete: direct",
+      "status": "pass",
+      "detail": "Read all 543 rows for the fixed 90-day period; preserved native report total and row sums without forcing reconciliation."
+    },
+    {
+      "label": "Entry-page rows complete: other",
+      "status": "pass",
+      "detail": "Read all 114 rows for the fixed 90-day period; preserved native report total and row sums without forcing reconciliation."
     }
   ],
   "open_questions": [
@@ -235,5 +265,6 @@
       "status": "GA4 stream inactive; current Salla sales not verified"
     }
   ],
-  "review_basis": "Reopened native GA4 source/medium, events, closed and open purchase journey reports on 2026-10-12. All 24 source rows and 14 event rows matched. Other aggregate tables reconciled with the original capture. Reopened BigQuery links, data stream, Google tag overview and retention settings; recorded observed configuration and unverified settings separately. Read-only all-user and purchase-event-only technology and city reports reviewed for the same 90-day window."
+  "review_basis": "Reopened native GA4 source/medium, events, closed and open purchase journey reports on 2026-10-12. All 24 source rows and 14 event rows matched. Other aggregate tables reconciled with the original capture. Reopened BigQuery links, data stream, Google tag overview and retention settings; recorded observed configuration and unverified settings separately. Read-only all-user and purchase-event-only technology and city reports reviewed for the same 90-day window.",
+  "entry_routes_reviewed_at": "2026-10-13"
 }

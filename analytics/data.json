@@ -13371,5 +13371,200 @@
     "matched_journey": false,
     "line_width_proportional": false,
     "particle_count_proportional": false
+  },
+  "channel_entry_routes": {
+    "period_from": "2026-07-14",
+    "period_to": "2026-10-11",
+    "captured_on": "2026-10-13",
+    "method": "GA4 Landing page report, Session source / medium filter, all rows for each group. Sessions are the report values; group types derive from the landing-page path. No user/session identifiers or private paths published.",
+    "groups": [
+      {
+        "key": "instagram",
+        "name": "إنستجرام",
+        "brand": "instagram",
+        "color": "#bb3978",
+        "source_names": [
+          "ig / social",
+          "l.instagram.com / referral"
+        ],
+        "native_landing_sessions": 1375.0,
+        "entry_sessions": {
+          "home": 1167.0,
+          "collection": 85.0,
+          "product": 89.0,
+          "other": 15.0,
+          "unknown": 18.0
+        },
+        "mapped_rows_sessions": 1374.0,
+        "native_acquisition_sessions": 1376.0,
+        "native_total_minus_rows": 1.0,
+        "landing_minus_acquisition": -1.0,
+        "original_purchase_events": 44.0,
+        "original_revenue": 22616.75,
+        "rows_captured": 69
+      },
+      {
+        "key": "snapchat",
+        "name": "سناب المدفوع",
+        "brand": "snapchat",
+        "color": "#9a7800",
+        "source_names": [
+          "snapchat / paid"
+        ],
+        "native_landing_sessions": 1010.0,
+        "entry_sessions": {
+          "home": 55.0,
+          "collection": 892.0,
+          "product": 40.0,
+          "other": 9.0,
+          "unknown": 13.0
+        },
+        "mapped_rows_sessions": 1009.0,
+        "native_acquisition_sessions": 1010.0,
+        "native_total_minus_rows": 1.0,
+        "landing_minus_acquisition": 0.0,
+        "original_purchase_events": 23.0,
+        "original_revenue": 12322.5,
+        "rows_captured": 52
+      },
+      {
+        "key": "google",
+        "name": "بحث Google",
+        "brand": "google",
+        "color": "#4285f4",
+        "source_names": [
+          "google / organic"
+        ],
+        "native_landing_sessions": 593.0,
+        "entry_sessions": {
+          "home": 268.0,
+          "collection": 101.0,
+          "product": 150.0,
+          "other": 40.0,
+          "unknown": 34.0
+        },
+        "mapped_rows_sessions": 593.0,
+        "native_acquisition_sessions": 593.0,
+        "native_total_minus_rows": 0.0,
+        "landing_minus_acquisition": 0.0,
+        "original_purchase_events": 13.0,
+        "original_revenue": 6528.0,
+        "rows_captured": 118
+      },
+      {
+        "key": "tiktok",
+        "name": "تيك توك",
+        "brand": "tiktok",
+        "color": "#273443",
+        "source_names": [
+          "tiktok.com / referral",
+          "tiktok / paid"
+        ],
+        "native_landing_sessions": 3063.0,
+        "entry_sessions": {
+          "home": 7.0,
+          "collection": 3010.0,
+          "product": 29.0,
+          "other": 0,
+          "unknown": 11.0
+        },
+        "mapped_rows_sessions": 3057.0,
+        "native_acquisition_sessions": 3038.0,
+        "native_total_minus_rows": 6.0,
+        "landing_minus_acquisition": 25.0,
+        "original_purchase_events": 1.0,
+        "original_revenue": 412.5,
+        "rows_captured": 18
+      },
+      {
+        "key": "direct",
+        "name": "وصول مباشر",
+        "brand": null,
+        "color": "#807970",
+        "source_names": [
+          "(direct) / (none)"
+        ],
+        "native_landing_sessions": 3493.0,
+        "entry_sessions": {
+          "home": 274.0,
+          "collection": 1319.0,
+          "product": 1748.0,
+          "other": 81.0,
+          "unknown": 60.0
+        },
+        "mapped_rows_sessions": 3482.0,
+        "native_acquisition_sessions": 3493.0,
+        "native_total_minus_rows": 11.0,
+        "landing_minus_acquisition": 0.0,
+        "original_purchase_events": 32.0,
+        "original_revenue": 13874.73,
+        "rows_captured": 543
+      },
+      {
+        "key": "other",
+        "name": "مصادر أخرى",
+        "brand": null,
+        "color": "#957b65",
+        "source_names": [
+          "(not set)",
+          "l.wl.co / referral",
+          "lm.facebook.com / referral",
+          "bymahee.com / referral",
+          "chatgpt.com / ai-assistant",
+          "pay.salla.sa / referral",
+          "facebook.com / referral",
+          "m.facebook.com / referral",
+          "snapchat.com / referral",
+          "google / cpc",
+          "ads.snapchat.com / referral",
+          "bylunad.com / referral",
+          "checkout.tamara.co / referral",
+          "l.facebook.com / referral",
+          "portal.salla.partners / referral",
+          "snapchat / social",
+          "tamara.lightning.force.com / referral"
+        ],
+        "native_landing_sessions": 348.0,
+        "entry_sessions": {
+          "home": 96.0,
+          "collection": 138.0,
+          "product": 62.0,
+          "other": 44.0,
+          "unknown": 9.0
+        },
+        "mapped_rows_sessions": 349.0,
+        "native_acquisition_sessions": 349.0,
+        "native_total_minus_rows": -1.0,
+        "landing_minus_acquisition": -1.0,
+        "original_purchase_events": 5.0,
+        "original_revenue": 2416.6,
+        "rows_captured": 114
+      }
+    ],
+    "entry_types": [
+      "home",
+      "collection",
+      "product",
+      "other",
+      "unknown"
+    ],
+    "landing_to_cart_join_verified": false,
+    "page_to_cart_direct_event_counts_verified": false,
+    "source_to_purchase_journey_join_verified": false,
+    "session_counts_may_be_estimates": true,
+    "reconciliation_complete": false,
+    "references": [
+      "https://support.google.com/analytics/answer/12931766?hl=en",
+      "https://support.google.com/analytics/answer/13331292?hl=en",
+      "https://support.google.com/analytics/answer/11080067?hl=en"
+    ],
+    "difference_reason_verified": false,
+    "quick_add_controls_observed": {
+      "home": true,
+      "collection": true,
+      "observed_on": "2026-10-13",
+      "buttons_executed": false,
+      "successful_add_verified": false
+    }
   }
 }

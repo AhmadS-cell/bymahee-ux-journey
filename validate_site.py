@@ -116,6 +116,18 @@ assert sum(g['purchases'] for g in flow['groups'])==118
 assert abs(sum(g['revenue'] for g in flow['groups'])-58171.08)<.01
 assert flow['native_sessions']==10340 and flow['unreconciled_session_gap']==481
 assert not any(flow[k] for k in ['matched_journey','line_width_proportional','particle_count_proportional'])
+entries=json.loads((root/'analytics/channel-entry-routes.json').read_text(encoding='utf-8'))
+assert entries==data['channel_entry_routes']
+assert entries['period_from']==data['metadata']['period_from'] and entries['period_to']==data['metadata']['period_to']
+assert not entries['landing_to_cart_join_verified'] and not entries['source_to_purchase_journey_join_verified']
+for g in entries['groups']:
+    assert set(g['entry_sessions'])==set(entries['entry_types'])
+    assert sum(g['entry_sessions'].values())==g['mapped_rows_sessions']
+    assert g['native_landing_sessions']-g['mapped_rows_sessions']==g['native_total_minus_rows']
+    original=next(r for r in flow['groups'] if r['key']==g['key'])
+    assert original['sessions']==g['native_acquisition_sessions'] and original['source_names']==g['source_names']
+assert next(g for g in entries['groups'] if g['key']=='instagram')['entry_sessions']=={'home':1167,'collection':85,'product':89,'other':15,'unknown':18}
+assert next(g for g in entries['groups'] if g['key']=='direct')['rows_captured']==543
 html=(root/'analytics/index.html').read_text(encoding='utf-8')
 embedded=re.search(r'<script id="report-data" type="application/json">(.*?)</script>',html,re.S)
 assert json.loads(embedded[1])==data
