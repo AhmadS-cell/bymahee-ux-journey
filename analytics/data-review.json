@@ -266,6 +266,21 @@
       "label": "Motion evidence semantics",
       "status": "pass",
       "detail": "Outlined dots on dashed landing-to-cart links are illustrative; no measured channel-to-purchase journey is claimed."
+    },
+    {
+      "label": "Final report clarity",
+      "status": "pass",
+      "detail": "Historical tracking warning dated 12 October; root SEO distinguishes the 13 October SERP snapshot from unavailable Search Console historical queries and average position."
+    },
+    {
+      "label": "Spend calculator channel reset",
+      "status": "pass",
+      "detail": "Changing channel clears the entered spend and confirmation. Positive, zero and no-purchase states checked in the browser."
+    },
+    {
+      "label": "Private order completion paths",
+      "status": "pass",
+      "detail": "Three thank-you paths merged into the existing private aggregate. 118 original rows -> 12 private rows combined -> 107 public rows. Totals remain 593 sessions, 13 purchases and SAR6528."
     }
   ],
   "open_questions": [
@@ -292,5 +307,6 @@
   ],
   "review_basis": "Reopened native GA4 source/medium, events, closed and open purchase journey reports on 2026-10-12. All 24 source rows and 14 event rows matched. Other aggregate tables reconciled with the original capture. Reopened BigQuery links, data stream, Google tag overview and retention settings; recorded observed configuration and unverified settings separately. Read-only all-user and purchase-event-only technology and city reports reviewed for the same 90-day window.",
   "entry_routes_reviewed_at": "2026-10-13",
-  "flow_period_reviewed_at": "2026-10-13"
+  "flow_period_reviewed_at": "2026-10-13",
+  "client_reviewed_at": "2026-10-13"
 }

@@ -70,9 +70,12 @@ assert organic['paid_source']==next(r for r in data['sources'] if r['name']=='go
 assert organic['organic_source']['session_purchase_rate']==2.19
 for rows in [organic['landing'],organic['landing_groups']]:
     for k,v in [('sessions',593),('purchases',13),('revenue',6528)]:assert abs(sum(r[k] for r in rows)-v)<.01,(k,v)
-assert organic['landing_original_rows']==118 and organic['landing_private_rows']==9
-assert len(organic['landing'])==110
-assert not any(re.search(r'/(account|checkout)(/|$)',r['path']) for r in organic['landing'])
+assert organic['landing_original_rows']==118 and organic['landing_private_rows']==12
+assert len(organic['landing'])==107
+private_organic=next(r for r in organic['landing'] if r['private_aggregate'])
+assert private_organic['sessions']==18 and private_organic['purchases']==3
+assert private_organic['users'] is None and private_organic['session_purchase_rate'] is None
+assert not any(re.search(r'/(account|checkout|thankyou)(/|$)',r['path']) for r in organic['landing'])
 assert all(r['session_purchase_rate'] is None for r in organic['landing'] if r['private_aggregate'])
 assert organic['search_console']['link_count']==0 and organic['search_console']['queries'] is None
 assert organic['google_ads']['link_count']==1 and not organic['google_ads']['cost_verified']
@@ -80,7 +83,7 @@ assert not organic['query_purchase_join_verified'] and not organic['store_change
 with (root/'analytics/google-organic-landing.csv').open(encoding='utf-8-sig',newline='') as f:organic_csv=list(csv.DictReader(f))
 assert [r['path'] for r in organic_csv]==[r['path'] for r in organic['landing']]
 for k,v in [('sessions',593),('purchases',13),('revenue',6528)]:assert abs(sum(float(r[k]) for r in organic_csv)-v)<.01
-assert not any(re.search(r'/(account|checkout)(/|$)',r['path']) for r in organic_csv)
+assert not any(re.search(r'/(account|checkout|thankyou)(/|$)',r['path']) for r in organic_csv)
 basket=json.loads((root/'analytics/basket-summary.json').read_text(encoding='utf-8'))
 catalog=json.loads((root/'analytics/product-catalog.json').read_text(encoding='utf-8'))
 assert basket==data['basket_summary'] and catalog==data['product_catalog']

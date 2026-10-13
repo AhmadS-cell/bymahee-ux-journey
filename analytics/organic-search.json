@@ -29,7 +29,7 @@
   "organic_active_users": 242,
   "organic_new_users": 222,
   "landing_original_rows": 118,
-  "landing_private_rows": 9,
+  "landing_private_rows": 12,
   "landing": [
     {
       "path": "/",
@@ -956,28 +956,6 @@
       "private_aggregate": false
     },
     {
-      "path": "/ar/thankyou/ENYanBp",
-      "sessions": 1,
-      "users": 1,
-      "new_users": 0,
-      "time": "0s",
-      "purchases": 0,
-      "revenue": 0.0,
-      "session_purchase_rate": 0.0,
-      "private_aggregate": false
-    },
-    {
-      "path": "/ar/thankyou/XAzRNoD",
-      "sessions": 1,
-      "users": 1,
-      "new_users": 0,
-      "time": "0s",
-      "purchases": 0,
-      "revenue": 0.0,
-      "session_purchase_rate": 0.0,
-      "private_aggregate": false
-    },
-    {
       "path": "/ar/tiger-lily-pajamas/p1954854880",
       "sessions": 1,
       "users": 1,
@@ -1121,17 +1099,6 @@
       "private_aggregate": false
     },
     {
-      "path": "/en/thankyou/gBQAwpE",
-      "sessions": 1,
-      "users": 1,
-      "new_users": 0,
-      "time": "0s",
-      "purchases": 0,
-      "revenue": 0.0,
-      "session_purchase_rate": 0.0,
-      "private_aggregate": false
-    },
-    {
       "path": "/en/tiger-lily-pajamas/p1954854880",
       "sessions": 1,
       "users": 1,
@@ -1231,8 +1198,8 @@
       "private_aggregate": false
     },
     {
-      "path": "صفحات الحساب والدفع · مجمّعة",
-      "sessions": 15,
+      "path": "صفحات الحساب والدفع وتأكيد الطلب · مجمّعة",
+      "sessions": 18,
       "purchases": 3,
       "revenue": 1938.75,
       "users": null,
@@ -1269,13 +1236,13 @@
     },
     {
       "name": "صفحات أخرى",
-      "sessions": 25,
+      "sessions": 22,
       "purchases": 1,
       "revenue": 407.5
     },
     {
-      "name": "صفحات الحساب والدفع",
-      "sessions": 15,
+      "name": "صفحات الحساب والدفع وتأكيد الطلب",
+      "sessions": 18,
       "purchases": 3,
       "revenue": 1938.75
     }
@@ -1297,5 +1264,6 @@
     "campaigns_verified": false
   },
   "query_purchase_join_verified": false,
-  "store_changes_applied": false
+  "store_changes_applied": false,
+  "privacy_reviewed_at": "2026-10-13"
 }
