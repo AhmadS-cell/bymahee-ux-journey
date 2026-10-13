@@ -6,7 +6,7 @@
       "key": "instagram",
       "name": "إنستجرام",
       "brand": "instagram",
-      "color": "#a55369",
+      "color": "#bb3978",
       "subtitle": "روابط موسومة وإحالات",
       "source_names": [
         "ig / social",
@@ -21,7 +21,7 @@
       "key": "snapchat",
       "name": "سناب المدفوع",
       "brand": "snapchat",
-      "color": "#ad7a32",
+      "color": "#9a7800",
       "subtitle": "إعلانات مدفوعة",
       "source_names": [
         "snapchat / paid"
@@ -35,7 +35,7 @@
       "key": "google",
       "name": "بحث Google",
       "brand": "google",
-      "color": "#406f7b",
+      "color": "#4285f4",
       "subtitle": "بحث غير مدفوع",
       "source_names": [
         "google / organic"
@@ -49,7 +49,7 @@
       "key": "tiktok",
       "name": "تيك توك",
       "brand": "tiktok",
-      "color": "#77713a",
+      "color": "#273443",
       "subtitle": "روابط وإعلانات",
       "source_names": [
         "tiktok.com / referral",
@@ -64,7 +64,7 @@
       "key": "direct",
       "name": "وصول مباشر",
       "brand": null,
-      "color": "#92875b",
+      "color": "#807970",
       "subtitle": "المصدر التسويقي غير ظاهر",
       "source_names": [
         "(direct) / (none)"
@@ -78,7 +78,7 @@
       "key": "other",
       "name": "مصادر أخرى",
       "brand": null,
-      "color": "#8f8580",
+      "color": "#957b65",
       "subtitle": "بقية الصفوف المسجّلة",
       "source_names": [
         "(not set)",
