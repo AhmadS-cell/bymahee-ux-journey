@@ -191,6 +191,16 @@
       "label": "Google Ads integration",
       "status": "pass",
       "detail": "One current Google Ads link, dated 2026-08-30. Existence of link does not verify active campaigns, spend or campaign quality."
+    },
+    {
+      "label": "Basket averages",
+      "status": "pass",
+      "detail": "AOV=58171.08/118; sold unit revenue=65130/270; units per recorded purchase=270/118. No majority-order or unique-product inference."
+    },
+    {
+      "label": "Product catalog matching",
+      "status": "pass",
+      "detail": "180 / 228 analytics names have current catalog matches using item IDs; 48 unresolved. Three shared names have multiple IDs and are shown as groups."
     }
   ],
   "open_questions": [

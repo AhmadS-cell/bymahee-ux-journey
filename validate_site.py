@@ -81,6 +81,28 @@ with (root/'analytics/google-organic-landing.csv').open(encoding='utf-8-sig',new
 assert [r['path'] for r in organic_csv]==[r['path'] for r in organic['landing']]
 for k,v in [('sessions',593),('purchases',13),('revenue',6528)]:assert abs(sum(float(r[k]) for r in organic_csv)-v)<.01
 assert not any(re.search(r'/(account|checkout)(/|$)',r['path']) for r in organic_csv)
+basket=json.loads((root/'analytics/basket-summary.json').read_text(encoding='utf-8'))
+catalog=json.loads((root/'analytics/product-catalog.json').read_text(encoding='utf-8'))
+assert basket==data['basket_summary'] and catalog==data['product_catalog']
+assert basket['period_from']==data['metadata']['period_from'] and basket['period_to']==data['metadata']['period_to']
+assert abs(basket['average_order_value']-58171.08/118)<.000001
+assert abs(basket['average_sold_unit_revenue']-65130/270)<.000001
+assert abs(basket['average_units_per_purchase']-270/118)<.000001
+assert not basket['order_item_distribution_verified'] and not basket['store_order_match_verified']
+assert not basket['physical_pieces_or_distinct_product_types']
+assert set(r['analytics_name'] for r in catalog['matches']+catalog['unmatched'])==set(r['name'] for r in data['products'])
+assert len(catalog['matches'])==180 and len(catalog['unmatched'])==48
+assert sum(r['is_multi'] for r in catalog['matches'])==3
+for m in catalog['matches']:
+    for v in m['variants']:
+        assert v['product_id'] in m['item_ids']
+        assert v['url'].startswith('https://bymahee.com/ar/') and v['url'].endswith('/p'+v['product_id'])
+        assert v['image'].startswith('assets/products/') and (root/'analytics'/v['image']).is_file()
+with (root/'analytics/products.csv').open(encoding='utf-8-sig',newline='') as f:product_csv=list(csv.DictReader(f))
+assert len(product_csv)==228
+for r in product_csv:
+    if float(r['units']):assert abs(float(r['average_sold_unit_revenue'])-float(r['revenue'])/float(r['units']))<=.0051
+    else:assert not r['average_sold_unit_revenue']
 html=(root/'analytics/index.html').read_text(encoding='utf-8')
 embedded=re.search(r'<script id="report-data" type="application/json">(.*?)</script>',html,re.S)
 assert json.loads(embedded[1])==data

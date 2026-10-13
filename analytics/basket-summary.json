@@ -1,0 +1,16 @@
+{
+  "period_from": "2026-07-14",
+  "period_to": "2026-10-11",
+  "purchases": 118,
+  "items_purchased": 270,
+  "purchase_revenue": 58171.08,
+  "item_revenue": 65130,
+  "average_order_value": 492.97525423728814,
+  "average_sold_unit_revenue": 241.22222222222223,
+  "average_units_per_purchase": 2.288135593220339,
+  "revenue_gap": 6958.919999999998,
+  "average_kind": "aggregate arithmetic mean; not median or most common order size",
+  "order_item_distribution_verified": false,
+  "store_order_match_verified": false,
+  "physical_pieces_or_distinct_product_types": false
+}
